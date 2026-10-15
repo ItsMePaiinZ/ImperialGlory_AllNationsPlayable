@@ -1,0 +1,194 @@
+  
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TOIO' 
+    .PARAMS 
+    [ 
+      .RECT [ 173 104 207 130 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT "LTEXT_UI_MAINMENU_SI_TT_POTENCIAL_ECONOMICO"
+        .X 32 .Y 32
+        .FONT "Fonts/gothic.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+      ]      
+    ]
+  ]
+  
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TOIT' 
+    .PARAMS 
+    [ 
+      .RECT [ 209 104 243 130 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT "LTEXT_UI_MAINMENU_SI_TT_POTENCIAL_MILITAR"
+        .X 32 .Y 32
+        .FONT "Fonts/gothic.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+      ]      
+    ]
+  ]
+  
+    
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TOIB' 
+    .PARAMS 
+    [ 
+      .RECT [ 245 104 279 130 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT "LTEXT_UI_MAINMENU_SI_TT_POTENCIAL_NAVAL"
+        .X 32 .Y 32
+        .FONT "Fonts/gothic.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+      ]      
+    ]
+  ]
+  
+    
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TOIC' 
+    .PARAMS 
+    [ 
+      .RECT [ 281 104 315 130 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT "LTEXT_UI_MAINMENU_SI_TT_POTENCIAL_CIENTIFICO"
+        .X 32 .Y 32
+        .FONT "Fonts/gothic.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+      ]      
+    ]
+  ]
+    
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TOBO' 
+    .PARAMS 
+    [ 
+      .RECT [ 33 447 176 470 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT "LTEXT_UI_MAINMENU_SI_TT_STOCK_ORO"
+        .X 32 .Y 32
+        .FONT "Fonts/gothic.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+      ]      
+    ]
+  ]  
+    
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TOBM' 
+    .PARAMS 
+    [ 
+      .RECT [ 33 473 176 496 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT "LTEXT_UI_MAINMENU_SI_TT_STOCK_MATPRIMAS"
+        .X 32 .Y 32
+        .FONT "Fonts/gothic.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+      ]      
+    ]
+  ] 
+  
+    
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TOBP' 
+    .PARAMS 
+    [ 
+      .RECT [ 178 447 319 470 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT "LTEXT_UI_MAINMENU_SI_TT_STOCK_POBLACION"
+        .X 32 .Y 32
+        .FONT "Fonts/gothic.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+      ]      
+    ]
+  ]  
+    
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TOBC' 
+    .PARAMS 
+    [ 
+      .RECT [ 178 473 319 496 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT "LTEXT_UI_MAINMENU_SI_TT_STOCK_COMIDA"
+        .X 32 .Y 32
+        .FONT "Fonts/gothic.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+      ]      
+    ]
+  ]     
+  
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TOPU' 
+    .PARAMS 
+    [ 
+      .RECT [ -196 590 -125 623 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT "LTEXT_UI_MAINMENU_SI_TT_PUERTOS"
+        .X 32 .Y 32
+        .FONT "Fonts/gothic.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+      ]      
+    ]
+  ]  
+  
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TOPR' 
+    .PARAMS 
+    [ 
+      .RECT [ -292 590 -250 623 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT "LTEXT_UI_MAINMENU_SI_TT_PROVINCIAS"
+        .X 32 .Y 32
+        .FONT "Fonts/gothic.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+      ]      
+    ]
+  ]    
+  

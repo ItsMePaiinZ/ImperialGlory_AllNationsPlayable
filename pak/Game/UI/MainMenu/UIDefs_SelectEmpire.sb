@@ -1,0 +1,236 @@
+.MODAL TRUE
+.CENTER FALSE
+.RELATIVE_PRIORITY FALSE
+
+#------------------------------------------------ IMAGEN DE FONDO -------------------------------------------
+.FONDO
+[
+  .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga"
+  .X 610	.Y 107 
+  .U 22 	.V 20 
+  .SX 357 .SY 617 
+  .ALPHA TRUE
+  .PRIORITY 10
+]
+
+#--------------------------------------------- MODO DE FUNCIONAMIENTO----------------------------------------
+# Modo 0 -> Campaña, muestra todos los datos y todos los imperios
+# Modo 1 -> Quick seleccion imperio, oculta datos de recursos y muestra todos los imperios
+# Modo 2 -> Quick seleccion imperio oponente, oculta datos de recursos y muestra todos los imperios menos el seleccionado antes
+#.MODO_FUNCIONAMIENTO 1
+
+
+#--------------------------------------------- POSICION DE LAS BANDERAS -------------------------------------
+
+#posicion de las banderas sobre el mapa
+.BANDERA_MAPA_X 120 #-490 #120 
+.BANDERA_MAPA_Y 686 # [MOD] was 529 (info panel moved down so North Africa can be clicked)
+
+#posicion de inicio de las banderas que llevan el nombre
+.BANDERA_X 637 
+.BANDERA_Y 240
+.SEPARACION_BANDERAS 60
+
+.DESP_NOMBRE_IMPERIO_X 58
+.DESP_NOMBRE_IMPERIO_Y 20
+
+.DESP_PRIMERA_ESTRELLA_X 147
+.DESP_PRIMERA_ESTRELLA_Y 3
+.SEPARACION_ESTELLA1 0
+.SEPARACION_ESTELLA2 37
+.SEPARACION_ESTELLA3 73
+.SEPARACION_ESTELLA4 108
+
+.CONTROLES
+[
+	#----------------------------------------- BARRAS DE INFORMACION RECURSOS ---------------------------------	
+	%Game/UI/MainMenu/SelectEmpire/UIDefs_BarrasRecursos.sb
+
+	#--------------------------------------------- SELECTOR DE DIFICULTAD -------------------------------------
+	%Game/UI/MainMenu/SelectEmpire/UIDefs_SelectorDificultad.sb
+	
+	#------------------------------------------ ZONAS SENSIBLES PARA TOOLTIPS ---------------------------------
+	%Game/UI/MainMenu/SelectEmpire/UIDefs_ZSToolTips.sb
+	
+
+	#---------------------------------------------- BITMAP IMPERIAL GLORY -------------------------------------	
+	[ .TIPO UIC_BITMAP .ID 'BMIG' 
+	 .PARAMS 
+	 [ 
+	  .FILE "Game/UI/MainMenu/ImperialGloryLogo.tga" .U 0 .V 0
+	  .X -610 .Y -107
+	  .SX 465 .SY 188  
+	  .PRIORITY 30
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- FONDO ALTERNATIVO QUICKGAME----------------------------------	
+	[ .TIPO UIC_BITMAP .ID 'BQUI' 
+	 .PARAMS 
+	 [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioQuickGame.tga"
+	  #.X 0 .Y 0
+	  .X -22 .Y -20
+    #.U 22 	.V 20 
+    .U 0 .V 0 
+    #.SX 357 .SY 617 
+    .SX 401 .SY 657 
+	  .PRIORITY 11
+	  .ALPHA TRUE
+	 ] 
+	]
+	
+	#---------------------------------------------- BITMAP FONDO INFORMACION PAIS -----------------------------	
+	# [MOD] Info panel made smaller and moved below the map so North Africa stays clickable
+	[ .TIPO UIC_BITMAP .ID 'BMFI' 
+	 .PARAMS 
+	 [ 
+	  .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioB_.tga" .U 43 .V 20
+	  .X -484 .Y 582
+	  .SX 421 .SY 46  
+	  .PRIORITY 30
+	  .ALPHA TRUE
+	 ] 
+	]
+	[ .TIPO UIC_BITMAP .ID 'BMF2' 
+	 .PARAMS 
+	 [ 
+	  .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioB_.tga" .U 43 .V 136
+	  .X -484 .Y 628
+	  .SX 421 .SY 31  
+	  .PRIORITY 30
+	  .ALPHA TRUE
+	 ] 
+	]
+	
+	#---------------------------------------------- BITMAP SELECTOR DE DIFICULTAD -----------------------------	
+	[ .TIPO UIC_BITMAP .ID 'BMFD' 
+	 .PARAMS 
+	 [ 
+	  .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" .U 361 .V 654
+	  .X 39 .Y 525
+	  .SX 142 .SY 26  
+	  .PRIORITY 35
+	  .ALPHA TRUE
+	 ] 
+	]	
+	
+	#-------------------------------------------- MAPA PAISES -------------------------------------------------
+	[
+		.TIPO UIC_MAPAPAISES .ID 'MAPP'
+		.PARAMS
+		[
+			%Game/UI/MainMenu/SelectEmpire/UIDefs_MapaPaisesSelectEmpire.sb
+		]		
+	]
+	
+	#----------------------------------- TEXTO SELECCIONA TU IMPERIO ------------------------------------------
+  [ .TIPO UIC_TEXT .ID 'LBTI'
+    .PARAMS 
+    [ 
+      .ALIGN CENTER
+      .TEXT LTEXT_UI_MAINMENU_SI_TITULO_SELECCION
+ 	    .FONT "Fonts/MonotypeCorsiva25.fnt"
+ 	    .X 786 .Y 170 .SCALE 1.0 
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]    	
+  ]	
+	
+	#----------------------------------- TEXTO IMPERIO SELECCIONADO -------------------------------------------
+  [ .TIPO UIC_TEXT .ID 'LBNS'
+    .PARAMS 
+    [ 
+      .ALIGN LEFT
+ 	    .FONT "Fonts/Times12.fnt"
+ 	    .X -424 .Y 595 .SCALE 1.0 
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]    	
+  ]	
+  
+	#----------------------------------- TEXTO INFORMACION IMPERIO --------------------------------------------
+  [ .TIPO UIC_WRAPTEXT .ID 'WTIS'
+    .PARAMS
+    [
+      .ALIGN LEFT
+      .TEXT
+      [
+        .FONT "Fonts/Times12.fnt"
+        .SCALE 1.0 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+      .X -474 .Y 622 .SX 380 .SY 30
+      .PRIORITY 35
+      .SLIDER_VERTICAL [ .STYLE DEFAULT_SLIDER_VERTICAL .PRIORITY 100 ]        
+     ]
+  ]  
+  
+	#----------------------------------- TEXTO NUMERO PROVINCIAS ----------------------------------------------
+  [ .TIPO UIC_TEXT .ID 'LBNP'
+    .PARAMS 
+    [ 
+      .ALIGN LEFT
+      .TEXT "0"
+ 	    .FONT "Fonts/Times12.fnt"
+ 	    .X -244 .Y 595 .SCALE 1.0 
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]    	
+  ] 
+ 
+	#----------------------------------- TEXTO NUMERO PUERTOS ------------------------------------------------
+  [ .TIPO UIC_TEXT .ID 'LBNM'
+    .PARAMS 
+    [ 
+      .ALIGN LEFT
+      .TEXT "0"
+ 	    .FONT "Fonts/Times12.fnt"
+ 	    .X -114 .Y 595 .SCALE 1.0 
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]    	
+  ] 
+	#-------------------------------------------- BOTON CANCEL ------------------------------------------------	
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'SIX_' 
+	 	.PARAMS
+	 	[ 
+	 		.IDSELECTSOUND "S_CANCELAR"    
+      			.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      
+	 		.STYLE DEFAULT_X_BUTTON
+	   .FONDO
+		  [
+		    .X 218 .Y 515
+        .PRIORITY 20  
+			]
+			
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      			
+      
+			.KEY
+			[
+				.TECLA LKEY_MAINMENU_CANCELKEY .EVENTOS [ KEY_DOWN KEY_UP ]          
+			] 			
+	 	]
+	]
+	
+	#-------------------------------------------- BOTON OK ----------------------------------------------------	
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'SIK_' 
+	 	.PARAMS
+	 	[ 
+	 		.IDSELECTSOUND "S_ACEPTAR"    
+      			.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      
+	 		.STYLE DEFAULT_OK_BUTTON
+	   .FONDO
+		  [
+		    .X 268 .Y 515
+        .PRIORITY 20  
+			]
+			
+      .IDSELECTSOUND "S_FXACEPTAR_IMPERIO"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      			
+			
+			.KEY [ .TECLA LKEY_MAINMENU_OPTION_SELECT .EVENTOS [ KEY_DOWN KEY_UP ] ]
+	 	]
+	]    
+	
+]	# ~CONTROLES

@@ -1,0 +1,1640 @@
+#######################################################
+# UIDefs_PoolIconosNotificaciones.sb
+# - Pool de iconos para las notificaciones de gestión
+#######################################################
+
+# -------------EDIFICIOS
+# Parámetros para el icono de notificación de edificio construído
+[
+  .KEY ICON_EDIFICIO
+  .PARAMS
+  [
+    #la textura aquí especificada es lo de menos puesto que va a ser cambiada en cada creación del diálogo, pero debemos ponerla
+    .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionEdificios.tga" 
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE  
+  ]
+]
+
+# ------------TECNOLOGIAS
+[
+  .KEY ICON_TECNOLOGIA_DEFAULT
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE
+    
+    .U 1 .V 701 
+  ]
+]
+
+# el nombre será ICON_TECNOLOGIA_ y el nombre de la tecnología (ICON_TECNOLOGIA_LIBERALISMO, ICON_TECNOLOGIA_DIEZMO,...)
+[
+  .KEY ICON_TECNOLOGIA_CONSERVACION_ALIMENTOS
+  .PARAMS
+  [
+    # Archivo de donde estamos cogiendo los gráficos (no va a cambiar entre los iconos)
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    
+    # Tamaño en pixels en ancho (SX) y alto (SY) (No va a cambiar)
+    .SX 140 .SY 49
+    
+    # No tocar. Ponerlo en todos
+    .ALPHA TRUE
+    
+    # Coordenadas en pixels dentro de el archivo anterior donde empieza nuestro icono
+    .U 1 .V 1 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_IMPUESTO_RENTAS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 1 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_VACUNACION
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 1 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_SIERRA_CIRCULAR
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 1 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_EDUCACION_BASICA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 1 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_TRUEQUE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 1 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_ASISTENCIA_SANITARIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 1 
+  ]
+]
+
+
+####################################################
+
+
+
+[
+  .KEY ICON_TECNOLOGIA_EDUCACION_MODERNA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 51 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_AGRICULTURA_MODERNA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 51 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_BOMBA_VAPOR
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 51 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_PRESION_FISCAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 51 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_INGENIERIA_FISCAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE
+    .U 424 .V 451
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_SAQUEO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 51 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_IMPUESTOS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 51 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_SERVICIO_MILITAR
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 51 
+  ]
+]
+
+#####################################################################################
+
+[
+  .KEY ICON_TECNOLOGIA_EDUCACION_AVANZADA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 101 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_REFORMA_AGRARIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 101 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_SIDERURGIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 101 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_MERCADO_DOMESTICO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 101 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_COMERCIO_INTERNACIONAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 101 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_INFRAESTRUCTURA_PORTUARIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 101 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_ARANCELES
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 101 
+  ]
+]
+
+#########################################################
+
+[
+  .KEY ICON_TECNOLOGIA_RED_MERCADOS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 151 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_VIGILANCIA_ADUANERA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 151 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_PUERTOS_INDUSTRIALIZADOS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 151 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CONTRABANDO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 151 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_GUARDACOSTAS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 151 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_POLITICA_EXTERIOR
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 151 
+  ]
+]
+
+##########################################################
+
+[
+  .KEY ICON_TECNOLOGIA_BOLSA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 201 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_REFORMA_ECONOMICA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 201 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_MODERNIZACION_PUERTOS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 201 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_PIRATERIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 201 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_RECONOCIMIENTO_NAVAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 201 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_SISTEMAS_DEMOCRATICOS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 201 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_ABSOLUTISMOS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 201 
+  ]
+]
+
+#######################################################
+
+[
+  .KEY ICON_TECNOLOGIA_BUROCRACIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 251 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_INFORMACION
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 251 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_DIPLOMACIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 251 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_SERVICIO_SECRETO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 251 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_ANEXION_PACIFICA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 251 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_PERIODISMO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 251 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_INFLUENCIA_CULTURAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 251 
+  ]
+]
+
+#################################################
+
+[
+  .KEY ICON_TECNOLOGIA_REPUBLICA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 301 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_MONARQUIA_PARLAMENTARIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 301 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_MONARQUIA_ABSOLUTA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 301 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_DICTADURA_MILITAR
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 301 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_ADMINISTRACION
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 301 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_RED_ESPIONAJE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 301 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_ESPIONAJE_MILITAR
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 301 
+  ]
+]
+
+#######################################################
+
+[
+  .KEY ICON_TECNOLOGIA_POLICIA_SECRETA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 351 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_SUBVERSION
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 351 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_PROPAGANDA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 351 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_INVERSIONES
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 351 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CONTRAESPIONAJE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 351 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_ORGANIZACION_TERRITORIAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 351 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CATASTRO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 351 
+  ]
+]
+
+###########################################################3
+
+[
+  .KEY ICON_TECNOLOGIA_PROTECCIONISMO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 401 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CODIGO_CIVIL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 401 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_SINDICALISMO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 401 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CAPITALISMO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 401 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_REVOLUCION_INDUSTRIAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 401 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_LIBERALISMO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 401 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_MECENAZGO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 401 
+  ]
+]
+
+##############################################################
+
+[
+  .KEY ICON_TECNOLOGIA_ILUSTRACION
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 451 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CUERPO_VOLUNTARIOS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 451 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_RECLUTAMIENTO_FORZOSO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 451 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_DIEZMO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 451 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_LEVA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 451 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_NACIONALISMO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 451 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_PREFECTURA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 451 
+  ]
+]
+
+#########################################################
+
+[
+  .KEY ICON_TECNOLOGIA_REPRESION
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 501 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_INFANTERIA_BASICA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 501 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CABALLERIA_BASICA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 501 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CONSTRUCCION_ARTILLERIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 501 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_INFRAESTRUCTURA_NAVAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 501 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_TACTICAS_GUERRA_BASICAS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 501 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CARRERA_MILITAR
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 501 
+  ]
+]
+
+##########################################################
+
+[
+  .KEY ICON_TECNOLOGIA_INVESTIGACION_ARMAMENTISTICA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 551 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_MANIOBRAS_MILITARES
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 551 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CAPTURAR_ARTILLERIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 551 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_HACER_PRISIONEROS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 551 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_INFANTERIA_AVANZADA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 551 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CABALLERIA_AVANZADA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 551 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_MANUFACTURA_ARTILLERIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 551 
+  ]
+]
+
+#####################################################
+
+[
+  .KEY ICON_TECNOLOGIA_ORGANIZACION_NAVAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 601 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_TACTICAS_GUERRA_AVANZADA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 601 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_INSTRUCCION_OFICIALES
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 601 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CAMPANA_INVIERNO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 601 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_MEJORAS_COMBATE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 601 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_MANIOBRAS_NAVALES
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 601 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_MANIOBRAS_NACIONALES
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 601 
+  ]
+]
+
+#######################################################
+
+[
+  .KEY ICON_TECNOLOGIA_CIRUGIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 651 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_INFANTERIA_ELITE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 651 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CABALLERIA_ELITE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 283 .V 651 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_PROD_IND_ARTILLERIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 424 .V 651 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_ARMADA_MODERNA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 565 .V 651 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_ALTO_MANDO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 706 .V 651 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_INGENIERIA_GUERRA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 847 .V 651 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CAMBIO_ERA_1
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 142 .V 301 
+  ]
+]
+[
+  .KEY ICON_TECNOLOGIA_CAMBIO_ERA_2
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga"
+    .SX 140 .SY 49
+    .ALPHA TRUE    
+    .U 1 .V 301 
+  ]
+]
+
+####################################################
+
+# --------------QUESTS
+
+# --------------DIPLOMACIA
+
+[
+  .KEY IMG_GENERICO_DIPLOMACIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga"
+    .SX 98 .SY 51 .U 397  .V 417
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY IMG_ALIANZA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga"
+    .SX 98 .SY 51 .U 1  .V 105
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY IMG_PERMISO_PASO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 100  .V 105
+    .SX 98 .SY 51
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY IMG_MEJORA_RELACIONES
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 199  .V 105
+    .SX 98 .SY 51
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY IMG_DECLARACION_GUERRA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 298  .V 105
+    .SX 98 .SY 51
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY IMG_TREGUA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 397  .V 105
+    .SX 98 .SY 51
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY IMG_ARMISTICIO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 1  .V 157
+    .SX 98 .SY 51
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY IMG_PACTO_PROTECCION
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 100  .V 157
+    .SX 98 .SY 51
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY IMG_TRATADO_COMERCIAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 199  .V 157
+    .SX 98 .SY 51
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY IMG_MATRIMONIO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 298  .V 157
+    .SX 98 .SY 51
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY IMG_PRESTAMO_EJERCITOS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 397  .V 157
+    .SX 98 .SY 51
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY IMG_AYUDA_MILITAR
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 100  .V 417
+    .SX 98 .SY 51
+    .ALPHA TRUE
+  ]
+]
+
+
+# --------------EFECTIVOS
+
+[
+  .KEY ICON_EFECTIVO
+  .PARAMS
+  [
+    # la textura aquí especificada es lo de menos puesto que va a ser cambiada en cada creación del diálogo, pero debemos poner
+    # una válida
+    .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionEdificios.tga" 
+    .U 1 .V 1 .SX 155 .SY 170
+    .ALPHA TRUE
+  ]
+]
+
+# --------------CAPTIONS
+# Definiciones de los iconos de caption para las notificaciones, compartida con el servicio de messagebox comunes
+%Game/UI/ModeloGestion/Iconos/UIDefs_PoolIconosCaptionNotificaciones.sb
+
+# --------------ICONOS GENERICOS
+[
+  .KEY ICON_NOTIFICACION_BATALLA1
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/Batalla1.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_BATALLA2
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/Batalla2.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+
+[
+  .KEY ICON_NOTIFICACION_BATALLA3
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/Batalla3.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+
+[
+  .KEY ICON_NOTIFICACION_BATALLA4
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/Batalla4.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_COMERCIO_BLOQUEADA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ComercioBloqueada.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_COMERCIO_CREADO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ComercioCreada.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_CONQUISTAR_MAPA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_CONQUISTAR_TERRITORIO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarTerritorio.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_CONQUISTAR_TERRITORIO_PACIFICAMENTE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarTerritorioPacifico.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_ELECCION_HEREDEROS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/EleccionHerederos.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_EXPULSION_IMPERIO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ExpulsionOtroImperio.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_EXPULSION_PARTIDA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ExpulsionPartida.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_INVESTIGACIONES
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/Investigaciones.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_GRAN_BRETANYA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/NotificacionInicioGranBretanya.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_FRANCIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/NotificacionInicioFrancia.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_AUSTRIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/NotificacionInicioAustria.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_PRUSIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/NotificacionInicioPrusia.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_RUSIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/NotificacionInicioRusia.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_PENALIZACIONES_COMIDA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/PenalizacionesComida.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_PERSECUCION_NAVAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/PersecucionNaval.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_QUEST
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/Quest.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_REFUERZO_FONDO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/RefuerzoFondo.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+# [MOD] Start icons for minor nations (placeholder image)
+
+[
+  .KEY ICON_NOTIFICACION_JUG_ESPANYA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_OTOMANO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_EGIPTO
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_DOS_SICILIAS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_DINAMARCA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_SUECIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_PORTUGAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_LOMBARDIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_PIAMONTE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_EPAPALES
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_RHELVETICA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_HANNOVER
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_BATAVIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_SAJONIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_POLONIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_MOLDAVIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_MARRUECOS
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_TUNEZ
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY ICON_NOTIFICACION_JUG_TRIPOLITANIA
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/Iconos/Notificaciones/ConquistarMapa.tga"
+    .U 1 .V 1 .SX 147 .SY 160
+    .ALPHA TRUE
+  ]
+]

@@ -1,0 +1,7 @@
+# Keep released files and game data byte-for-byte (no line-ending conversion),
+# so the build can reproduce the release exactly on every OS.
+mod/**                       -text
+pak/**                       -text
+tools/patcher_template.ps1   -text
+*.PAK                        binary
+*.jpg                        binary

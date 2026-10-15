@@ -1,0 +1,1355 @@
+#============================================================================================================
+#============================================================================================================
+#============================================================================================================
+#  Mapa de paises
+#
+# .MODO_SELECCION 0			  					-> Modo de seleccion ( 0 = provincias, 1 = grupos, 2 = mixto )
+#
+#	.X 100 . Y 100   									-> Posicion del mapa
+# 
+#	.ZONA_SENSIBLE										-> zona sensible 
+#	[ 
+#		.RECT 		[ 50 98 501 575 ] 		-> Area de la zona sensible
+#		.EVENTOS  [ KEY_DOWN MOUSE ] 		-> Eventos a los que reaccionara 
+#	]                   
+#
+# .FONDO [ ... ]   									-> Imagen de fondo (parametros de bitmap)
+#
+#	.PROVINCIAS 											-> Lista de provincias 
+# [
+#		[ 															-> Declaracion de una provincia
+#			.PROVINCIA 
+#			[ 
+#				.IDX 12											-> Idx asociado a la provincia
+#				.ENABLED TRUE								-> Estado incial activado / desactivado (opcional, TRUE por defecto)
+#
+#				.BMP_SOLTADO [ ... ]				-> Imagen de estado "soltado" 		 (parametros de bitmap)
+#				.BMP_PULSADO [ ... ]				-> Imagen de estado "pulsado"					"
+#				.BMP_SELECT  [ ... ]				-> Imagen de estado "seleccionado"		" 
+#		]					
+#
+#		[ .PROVINCIA [ ... ] ]				
+#		[ .PROVINCIA [ ... ] ]				
+#		[ .PROVINCIA [ ... ] ]				
+#		...
+#	]
+# 
+#	.GRUPOS														-> Lista de grupos (opcional)
+#	[
+#	
+#		[
+#			.GRUPO												-> Declaracion de un grupo
+#			[
+#				.IDX 1											-> Idx del grupo
+#			
+#				.PROVINCIAS									-> Lista de provincias del grupo
+#				[
+#					[.IDX_PROVINCIA 1 ]				-> Idx de la provincia
+#					[.IDX_PROVINCIA 2 ]				->   "      "       " 
+#					[ ... ]
+#				]
+#		]
+#
+#		[ . GRUPO [ ... ] ]
+#		[ . GRUPO [ ... ] ]
+#		[ . GRUPO [ ... ] ]
+#		...
+#	]
+#============================================================================================================
+#============================================================================================================
+#============================================================================================================
+
+#------------------------------------------------ MODO PAIS -------------------------------------------------
+.MODO_SELECCION 1
+
+#------------------------------------------------ POSICION DEL MAPA -----------------------------------------
+.X 60	.Y 107
+
+#------------------------------------------------ ZONA SENSIBLE ---------------------------------------------
+.ZONA_SENSIBLE
+[ 
+	.RECT 		[ 50 98 509 590 ]   # [MOD] was [ 50 98 501 440 ]: North Africa clickable 
+	.EVENTOS  [ KEY_DOWN MOUSE ] 
+]                   
+
+#------------------------------------------------ IMAGEN DE FONDO -------------------------------------------
+.FONDO
+[
+  .FILE "Game/UI/Comun/MapaPaises.tga"
+  .X  0		.Y 0 
+  .U  0 	.V 0 
+  .SX 555 .SY 635 
+  .ALPHA TRUE
+  .PRIORITY 20
+]
+
+#============================================================================================================
+#================================================ PROVINCIAS ================================================
+#============================================================================================================
+.PROVINCIAS
+[
+	
+	#---------------------------------------------- INGLATERRA ------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 1
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 129 .Y 199 .U 8 .V 6 .SX 69 .SY 76 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 129 .Y 199 .U 8 .V 6 .SX 69 .SY 76 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 129 .Y 199 .U 8 .V 6 .SX 69 .SY 76 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- ESCOCIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 2
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 147 .Y 154 .U 74 .V 6 .SX 40 .SY 53 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 147 .Y 154 .U 74 .V 6 .SX 40 .SY 53 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 147 .Y 154 .U 74 .V 6 .SX 40 .SY 53 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- GALES -----------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 3
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 142 .Y 219 .U 117 .V 6 .SX 31 .SY 36 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 142 .Y 219 .U 117 .V 6 .SX 31 .SY 36 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 142 .Y 219 .U 117 .V 6 .SX 31 .SY 36 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- IRLANDA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 4
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 110 .Y 187 .U 145 .V 6 .SX 57 .SY 47 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 110 .Y 187 .U 145 .V 6 .SX 57 .SY 47 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 110 .Y 187 .U 145 .V 6 .SX 57 .SY 47 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- I_FRANCIA -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 5
+			.ENABLED TRUE															
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 159 .Y 274 .U 199 .V 6 .SX 51 .SY 64 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 159 .Y 274 .U 199 .V 6 .SX 51 .SY 64 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 159 .Y 274 .U 199 .V 6 .SX 51 .SY 64 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- BRETANYA --------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 6
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 129 .Y 269 .U 247 .V 6 .SX 52 .SY 51 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 129 .Y 269 .U 247 .V 6 .SX 52 .SY 51 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 129 .Y 269 .U 247 .V 6 .SX 52 .SY 51 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- CHAMPAGNE -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 7
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 175 .Y 261 .U 302 .V 6 .SX 55 .SY 69 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 175 .Y 261 .U 302 .V 6 .SX 55 .SY 69 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 175 .Y 261 .U 302 .V 6 .SX 55 .SY 69 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- BURDEOS ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 8
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 130 .Y 309 .U 360 .V 6 .SX 46 .SY 57 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 130 .Y 309 .U 360 .V 6 .SX 46 .SY 57 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 130 .Y 309 .U 360 .V 6 .SX 46 .SY 57 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- TOULOUSE --------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 9
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 155 .Y 317 .U 409 .V 6 .SX 69 .SY 85 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 155 .Y 317 .U 409 .V 6 .SX 69 .SY 85 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 155 .Y 317 .U 409 .V 6 .SX 69 .SY 85 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- LETONIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 10
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 318 .Y 98 .U 481 .V 6 .SX 110 .SY 121 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 318 .Y 98 .U 481 .V 6 .SX 110 .SY 121 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 318 .Y 98 .U 481 .V 6 .SX 110 .SY 121 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MOSCU -----------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 11
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 388 .Y 97 .U 594 .V 6 .SX 115 .SY 145 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 388 .Y 97 .U 594 .V 6 .SX 115 .SY 145 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 388 .Y 97 .U 594 .V 6 .SX 115 .SY 145 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MINSK -----------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 12
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 314 .Y 193 .U 712 .V 6 .SX 89 .SY 116 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 314 .Y 193 .U 712 .V 6 .SX 89 .SY 116 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 314 .Y 193 .U 712 .V 6 .SX 89 .SY 116 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- KURKS -----------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 13
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 363 .Y 231 .U 804 .V 6 .SX 142 .SY 170 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 363 .Y 231 .U 804 .V 6 .SX 142 .SY 170 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 363 .Y 231 .U 804 .V 6 .SX 142 .SY 170 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- KIEV ------------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 14
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 333 .Y 187 .U 8 .V 182 .SX 171 .SY 156 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 333 .Y 187 .U 8 .V 182 .SX 171 .SY 156 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 333 .Y 187 .U 8 .V 182 .SX 171 .SY 156 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- AUSTRIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 15
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 225 .Y 298 .U 183 .V 182 .SX 43 .SY 46 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 225 .Y 298 .U 183 .V 182 .SX 43 .SY 46 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 225 .Y 298 .U 183 .V 182 .SX 43 .SY 46 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- BOHEMIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 16
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 253 .Y 281 .U 229 .V 182 .SX 66 .SY 55 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 253 .Y 281 .U 229 .V 182 .SX 66 .SY 55 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 253 .Y 281 .U 229 .V 182 .SX 66 .SY 55 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- HUNGRIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 17
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 257 .Y 317 .U 298 .V 182 .SX 79 .SY 60 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 257 .Y 317 .U 298 .V 182 .SX 79 .SY 60 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 257 .Y 317 .U 298 .V 182 .SX 79 .SY 60 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- GALICIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 18
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 294 .Y 289 .U 380 .V 182 .SX 62 .SY 64 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 294 .Y 289 .U 380 .V 182 .SX 62 .SY 64 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 294 .Y 289 .U 380 .V 182 .SX 62 .SY 64 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- BRANDENBURGO ----------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 19
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 239 .Y 236 .U 445 .V 182 .SX 55 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 239 .Y 236 .U 445 .V 182 .SX 55 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 239 .Y 236 .U 445 .V 182 .SX 55 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- PRUSIAORIENTAL --------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 20
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 281 .Y 237 .U 503 .V 182 .SX 39 .SY 32 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 281 .Y 237 .U 503 .V 182 .SX 39 .SY 32 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 281 .Y 237 .U 503 .V 182 .SX 39 .SY 32 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- SILESIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 21
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 261 .Y 265 .U 545 .V 182 .SX 47 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 261 .Y 265 .U 545 .V 182 .SX 47 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 261 .Y 265 .U 545 .V 182 .SX 47 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- CASTILLA --------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 22
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 72 .Y 317 .U 595 .V 182 .SX 103 .SY 97 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 72 .Y 317 .U 595 .V 182 .SX 103 .SY 97 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 72 .Y 317 .U 595 .V 182 .SX 103 .SY 97 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- CATALUNYA -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 23
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 127 .Y 357 .U 701 .V 182 .SX 45 .SY 36 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 127 .Y 357 .U 701 .V 182 .SX 45 .SY 36 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 127 .Y 357 .U 701 .V 182 .SX 45 .SY 36 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- ARAGON ----------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 24
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 112 .Y 340 .U 749 .V 182 .SX 47 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 112 .Y 340 .U 749 .V 182 .SX 47 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 112 .Y 340 .U 749 .V 182 .SX 47 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- ANDALUCIA -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 25
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 66 .Y 372 .U 799 .V 182 .SX 63 .SY 53 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 66 .Y 372 .U 799 .V 182 .SX 63 .SY 53 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 66 .Y 372 .U 799 .V 182 .SX 63 .SY 53 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- ANATOLIA --------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 26
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 351 .Y 384 .U 865 .V 182 .SX 151 .SY 194 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 351 .Y 384 .U 865 .V 182 .SX 151 .SY 194 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 351 .Y 384 .U 865 .V 182 .SX 151 .SY 194 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- REGIONBALCANICA -------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 27
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 268 .Y 360 .U 8 .V 379 .SX 114 .SY 69 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 268 .Y 360 .U 8 .V 379 .SX 114 .SY 69 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 268 .Y 360 .U 8 .V 379 .SX 114 .SY 69 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- GRECIA ----------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 28
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 292 .Y 404 .U 125 .V 379 .SX 73 .SY 99 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 292 .Y 404 .U 125 .V 379 .SX 73 .SY 99 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 292 .Y 404 .U 125 .V 379 .SX 73 .SY 99 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- EGIPTO ----------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 29
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 342 .Y 530 .U 201 .V 379 .SX 67 .SY 52 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 342 .Y 530 .U 201 .V 379 .SX 67 .SY 52 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 342 .Y 530 .U 201 .V 379 .SX 67 .SY 52 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- CIRENAICA -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 30
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 291 .Y 520 .U 271 .V 379 .SX 57 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 291 .Y 520 .U 271 .V 379 .SX 57 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 291 .Y 520 .U 271 .V 379 .SX 57 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- NAPOLES ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 31
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 237 .Y 384 .U 331 .V 379 .SX 41 .SY 49 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 237 .Y 384 .U 331 .V 379 .SX 41 .SY 49 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 237 .Y 384 .U 331 .V 379 .SX 41 .SY 49 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- SICILIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 32
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 229 .Y 407 .U 375 .V 379 .SX 62 .SY 61 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 229 .Y 407 .U 375 .V 379 .SX 62 .SY 61 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 229 .Y 407 .U 375 .V 379 .SX 62 .SY 61 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- DINAMARCA -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 33
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 230 .Y 201 .U 440 .V 379 .SX 28 .SY 60 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 230 .Y 201 .U 440 .V 379 .SX 28 .SY 60 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 230 .Y 201 .U 440 .V 379 .SX 28 .SY 60 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- NORUEGA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 34
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 224 .Y 95 .U 471 .V 379 .SX 77 .SY 104 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 224 .Y 95 .U 471 .V 379 .SX 77 .SY 104 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 224 .Y 95 .U 471 .V 379 .SX 77 .SY 104 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- SUECIA ----------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 35
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 249 .Y 97 .U 551 .V 379 .SX 82 .SY 148 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 249 .Y 97 .U 551 .V 379 .SX 82 .SY 148 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 249 .Y 97 .U 551 .V 379 .SX 82 .SY 148 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- FINLANDIA -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 36
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 316 .Y 95 .U 636 .V 379 .SX 55 .SY 90 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 316 .Y 95 .U 636 .V 379 .SX 55 .SY 90 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 316 .Y 95 .U 636 .V 379 .SX 55 .SY 90 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- ALENTEJO --------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 37
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 54 .Y 332 .U 694 .V 379 .SX 45 .SY 52 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 54 .Y 332 .U 694 .V 379 .SX 45 .SY 52 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 54 .Y 332 .U 694 .V 379 .SX 45 .SY 52 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- ALGARBE ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 38
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 50 .Y 366 .U 742 .V 379 .SX 32 .SY 35 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 50 .Y 366 .U 742 .V 379 .SX 32 .SY 35 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 50 .Y 366 .U 742 .V 379 .SX 32 .SY 35 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- LOMBARDIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 39
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 210 .Y 328 .U 777 .V 379 .SX 38 .SY 36 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 210	.Y 328 .U 777 .V 379 .SX 38 .SY 36 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 210 .Y 328 .U 777 .V 379 .SX 38 .SY 36 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- VENECIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 40
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 236 .Y 328 .U 818 .V 379 .SX 52 .SY 67 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 236	.Y 328 .U 818 .V 379 .SX 52 .SY 67 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 236 .Y 328 .U 818 .V 379 .SX 52 .SY 67 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- PIAMONTE --------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 41
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 189 .Y 330 .U 873 .V 379 .SX 44 .SY 99 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 189	.Y 330 .U 873 .V 379 .SX 44 .SY 99 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 189 .Y 330 .U 873 .V 379 .SX 44 .SY 99 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- E_PAPALES -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 42
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 223 .Y 353 .U 920 .V 379 .SX 34 .SY 58 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 223	.Y 353 .U 920 .V 379 .SX 34 .SY 58 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 223 .Y 353 .U 920 .V 379 .SX 34 .SY 58 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- R_HELVETICA -----------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 43
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 199 .Y 313 .U 957 .V 379 .SX 34 .SY 26 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 199	.Y 313 .U 957 .V 379 .SX 34 .SY 26 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 199 .Y 313 .U 957 .V 379 .SX 34 .SY 26 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- HANNOVER --------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 44
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 215 .Y 245 .U 8 .V 530 .SX 43 .SY 83 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 215	.Y 245 .U 8 .V 530 .SX 43 .SY 83 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 215 .Y 245 .U 8 .V 530 .SX 43 .SY 83 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- BATAVIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 45
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 196 .Y 242 .U 54 .V 530 .SX 43 .SY 43 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 196	.Y 242 .U 54 .V 530 .SX 43 .SY 43 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 196 .Y 242 .U 54 .V 530 .SX 43 .SY 43 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- SAJONIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 46
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 239 .Y 265 .U 100 .V 530 .SX 40 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 239	.Y 265 .U 100 .V 530 .SX 40 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 239 .Y 265 .U 100 .V 530 .SX 40 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- POLONIA ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 47
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 273 .Y 227 .U 143 .V 530 .SX 70 .SY 79 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 273	.Y 227 .U 143 .V 530 .SX 70 .SY 79 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 273 .Y 227 .U 143 .V 530 .SX 70 .SY 79 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MOLDAVIA --------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 48
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 324 .Y 318 .U 216 .V 530 .SX 57 .SY 65 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 324	.Y 318 .U 216 .V 530 .SX 57 .SY 65 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 324 .Y 318 .U 216 .V 530 .SX 57 .SY 65 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MARRUECOS -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 49
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 47 .Y 420 .U 276 .V 530 .SX 103 .SY 61 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 47 .Y 420 .U 276 .V 530 .SX 103 .SY 61 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 47 .Y 420 .U 276 .V 530 .SX 103 .SY 61 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- TUNEZ -----------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 50
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 142 .Y 436 .U 382 .V 530 .SX 79 .SY 92 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 142 .Y 436 .U 382 .V 530 .SX 79 .SY 92 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 142 .Y 436 .U 382 .V 530 .SX 79 .SY 92 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- TRIPOLITANIA ----------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 51
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 200 .Y 504 .U 464 .V 530 .SX 98 .SY 80 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 200 .Y 504 .U 464 .V 530 .SX 98 .SY 80 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 200 .Y 504 .U 464 .V 530 .SX 98 .SY 80 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- GOLFOFINLANDIA --------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 52
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 305 .Y 166 .U 565 .V 530 .SX 65 .SY 61 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 305 .Y 166 .U 565 .V 530 .SX 65 .SY 61 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 305 .Y 166 .U 565 .V 530 .SX 65 .SY 61 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MARBALTICO ------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 53
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 238 .Y 105 .U 633 .V 530 .SX 101 .SY 156 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 238 .Y 105 .U 633 .V 530 .SX 101 .SY 156 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 238 .Y 105 .U 633 .V 530 .SX 101 .SY 156 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MARWADDEN -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 54
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 197 .Y 225 .U 737 .V 530 .SX 46 .SY 39 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 197 .Y 225 .U 737 .V 530 .SX 46 .SY 39 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 197 .Y 225 .U 737 .V 530 .SX 46 .SY 39 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MARNORTE --------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 55
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 155 .Y 127 .U 8 .V 755 .SX 127 .SY 130 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 155 .Y 127 .U 8 .V 755 .SX 127 .SY 130 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 155 .Y 127 .U 8 .V 755 .SX 127 .SY 130 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MARNORUEGA ------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 56
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 204 .Y 94 .U 138 .V 755 .SX 83 .SY 80 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 204 .Y 94 .U 138 .V 755 .SX 83 .SY 80 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 204 .Y 94 .U 138 .V 755 .SX 83 .SY 80 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- ATLANTICONORTE --------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 57
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 49 .Y 97 .U 786 .V 530 .SX 169 .SY 222 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 49 .Y 97 .U 786 .V 530 .SX 169 .SY 222 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 49 .Y 97 .U 786 .V 530 .SX 169 .SY 222 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MARIRLANDA ------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 58
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 115 .Y 174 .U 224 .V 755 .SX 54 .SY 83 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 115 .Y 174 .U 224 .V 755 .SX 54 .SY 83 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 115 .Y 174 .U 224 .V 755 .SX 54 .SY 83 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- CANALMANCHA -----------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 59
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 121 .Y 243 .U 281 .V 755 .SX 88 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 121 .Y 243 .U 281 .V 755 .SX 88 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 121 .Y 243 .U 281 .V 755 .SX 88 .SY 45 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- GOLFOVIZCAYA ----------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 60
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 109 .Y 271 .U 372 .V 755 .SX 42 .SY 76 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 109 .Y 271 .U 372 .V 755 .SX 42 .SY 76 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 109 .Y 271 .U 372 .V 755 .SX 42 .SY 76 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- FINISTERRE ------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 61
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 47 .Y 294 .U 417 .V 755 .SX 37 .SY 42 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 47 .Y 294 .U 417 .V 755 .SX 37 .SY 42 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 47 .Y 294 .U 417 .V 755 .SX 37 .SY 42 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- OCEANOATLANTICO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	
+	#---------------------------------------------- GIBRALTAR -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 63
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 63 .Y 403 .U 457 .V 755 .SX 52 .SY 43 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 63 .Y 403 .U 457 .V 755 .SX 52 .SY 43 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 63 .Y 403 .U 457 .V 755 .SX 52 .SY 43 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- LEVANTE ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 64
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 108 .Y 378 .U 512 .V 755 .SX 53 .SY 56 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 108 .Y 378 .U 512 .V 755 .SX 53 .SY 56 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 108 .Y 378 .U 512 .V 755 .SX 53 .SY 56 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- GOLFOLEON -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 65
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 155 .Y 356 .U 568 .V 755 .SX 47 .SY 48 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 155 .Y 356 .U 568 .V 755 .SX 47 .SY 48 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 155 .Y 356 .U 568 .V 755 .SX 47 .SY 48 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MEDITERRANEOOCCIDENTAL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	
+	#---------------------------------------------- MARLIGURIA ------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 67
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 192 .Y 357 .U 618 .V 755 .SX 48 .SY 53 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 192 .Y 357 .U 618 .V 755 .SX 48 .SY 53 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 192 .Y 357 .U 618 .V 755 .SX 48 .SY 53 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MARTIRRENO ------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 68
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 208 .Y 399 .U 669 .V 755 .SX 62 .SY 55 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 208 .Y 399 .U 669 .V 755 .SX 62 .SY 55 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 208 .Y 399 .U 669 .V 755 .SX 62 .SY 55 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MARADRIATICO ----------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 69
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 241 .Y 349 .U 734 .V 755 .SX 59 .SY 88 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 241 .Y 349 .U 734 .V 755 .SX 59 .SY 88 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 241 .Y 349 .U 734 .V 755 .SX 59 .SY 88 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MEDITERRANEOCENTRAL ---------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 70
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 220 .Y 460 .U 796 .V 755 .SX 105 .SY 70 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 220 .Y 460 .U 796 .V 755 .SX 105 .SY 70 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 220 .Y 460 .U 796 .V 755 .SX 105 .SY 70 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- GOLFOSIDRA ------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 71
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 202 .Y 463 .U 8 .V 888 .SX 142 .SY 90 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 202 .Y 463 .U 8 .V 888 .SX 142 .SY 90 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 202 .Y 463 .U 8 .V 888 .SX 142 .SY 90 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MAREGEO ---------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 72
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 311 .Y 416 .U 152 .V 888 .SX 75 .SY 78 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 311 .Y 416 .U 152 .V 888 .SX 75 .SY 78 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 311 .Y 416 .U 152 .V 888 .SX 75 .SY 78 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MEDITERRANEOORIENTAL --------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 73
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 312 .Y 460 .U 805 .V 888 .SX 136 .SY 80 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 312 .Y 460 .U 805 .V 888 .SX 136 .SY 80 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 312 .Y 460 .U 805 .V 888 .SX 136 .SY 80 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MARNEGRO --------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 74
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 362 .Y 327 .U 230 .V 888 .SX 117 .SY 91 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 362 .Y 327 .U 230 .V 888 .SX 117 .SY 91 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 362 .Y 327 .U 230 .V 888 .SX 117 .SY 91 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- COSTAPORTUGUESA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	
+	#---------------------------------------------- BAHIACADIZ ------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 76
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 48 .Y 392 .U 350 .V 888 .SX 28 .SY 30 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 48 .Y 392 .U 350 .V 888 .SX 28 .SY 30 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 48 .Y 392 .U 350 .V 888 .SX 28 .SY 30 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- DESEMBOCADURANILO -----------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 77
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 329 .Y 514 .U 707 .V 888 .SX 95 .SY 34 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 329 .Y 514 .U 707 .V 888 .SX 95 .SY 34 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 329 .Y 514 .U 707 .V 888 .SX 95 .SY 34 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- MARJONICO -------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 78
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 264 .Y 422 .U 381 .V 888 .SX 63 .SY 72 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 264 .Y 422 .U 381 .V 888 .SX 63 .SY 72 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 264 .Y 422 .U 381 .V 888 .SX 63 .SY 72 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- COSTASICILIANA --------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 79
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 221 .Y 433 .U 447 .V 888 .SX 51 .SY 47 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 221 .Y 433 .U 447 .V 888 .SX 51 .SY 47 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 221 .Y 433 .U 447 .V 888 .SX 51 .SY 47 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- CANTABRICO ------------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 80
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 79 .Y 299 .U 501 .V 888 .SX 50 .SY 43 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 79 .Y 299 .U 501 .V 888 .SX 50 .SY 43 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 79 .Y 299 .U 501 .V 888 .SX 50 .SY 43 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- COSTAMARROQUI ---------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 81
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 47 .Y 409 .U 554 .V 888 .SX 22 .SY 32 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 47 .Y 409 .U 554 .V 888 .SX 22 .SY 32 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 47 .Y 409 .U 554 .V 888 .SX 22 .SY 32 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+
+	#---------------------------------------------- COSTAAFRICANA ---------------------------------------------
+	[ 
+		.PROVINCIA 
+		[
+			.IDX 82
+			.ENABLED TRUE									
+			.BMP_SOLTADO [ .FILE "Game/UI/Comun/ProvinciasNoSeleccion.tga" .X 103 .Y 422 .U 579 .V 888 .SX 125 .SY 47 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_PULSADO [ .FILE "Game/UI/Comun/ProvinciasPulsado.tga" 		 .X 103 .Y 422 .U 579 .V 888 .SX 125 .SY 47 .ALPHA TRUE .PRIORITY 30 ]			
+			.BMP_SELECT  [ .FILE "Game/UI/Comun/ProvinciasSeleccion.tga" 	 .X 103 .Y 422 .U 579 .V 888 .SX 125 .SY 47 .ALPHA TRUE .PRIORITY 30 ]			
+		]
+	]
+		
+] # ~ PROVINCIAS
+
+#============================================================================================================
+#================================================ GRUPOS ====================================================
+#============================================================================================================
+.GRUPOS
+[
+	#---------------------------------------------- GRAN_BRETANYA ---------------------------------------------
+	[
+		.GRUPO
+		[
+			.IDX 1
+			
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 1 ]
+				[.IDX_PROVINCIA 2 ]
+				[.IDX_PROVINCIA 3 ]
+				[.IDX_PROVINCIA 4 ]
+			]
+		]
+	]
+
+	#---------------------------------------------- FRANCIA ---------------------------------------------------
+	[
+		.GRUPO
+		[
+			.IDX 2
+
+			.PROVINCIAS			
+			[
+				[.IDX_PROVINCIA 5 ]
+				[.IDX_PROVINCIA 6 ]
+				[.IDX_PROVINCIA 7 ]
+				[.IDX_PROVINCIA 8 ]
+				[.IDX_PROVINCIA 9 ]
+			]
+		]
+	]
+	
+	#---------------------------------------------- AUSTRIA ---------------------------------------------------	
+	[
+		.GRUPO
+		[
+			.IDX 3
+			
+			.PROVINCIAS			
+			[
+				[.IDX_PROVINCIA 15 ]
+				[.IDX_PROVINCIA 16 ]
+				[.IDX_PROVINCIA 17 ]
+				[.IDX_PROVINCIA 18 ]
+			]	
+		]
+	]
+
+	#---------------------------------------------- RUSIA -----------------------------------------------------
+	[
+		.GRUPO
+		[
+			.IDX 24
+			
+			.PROVINCIAS			
+			[
+				[.IDX_PROVINCIA 10 ]
+				[.IDX_PROVINCIA 11 ]
+				[.IDX_PROVINCIA 12 ]
+				[.IDX_PROVINCIA 13 ]
+				[.IDX_PROVINCIA 14 ]
+			]
+		]
+	]
+
+	#---------------------------------------------- PRUSIA ----------------------------------------------------
+	[
+		.GRUPO
+		[
+			.IDX 4
+			
+			.PROVINCIAS			
+			[
+				[.IDX_PROVINCIA 19 ]
+				[.IDX_PROVINCIA 20 ]
+				[.IDX_PROVINCIA 21 ]
+			]
+		]
+	]
+
+	# [MOD] Minor nations made selectable
+	#---------------------------------------------- ESPANYA ----------
+	[
+		.GRUPO
+		[
+			.IDX 5
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 22 ]
+				[.IDX_PROVINCIA 23 ]
+				[.IDX_PROVINCIA 24 ]
+				[.IDX_PROVINCIA 25 ]
+			]
+		]
+	]
+	#---------------------------------------------- OTOMANO ----------
+	[
+		.GRUPO
+		[
+			.IDX 6
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 26 ]
+				[.IDX_PROVINCIA 27 ]
+				[.IDX_PROVINCIA 28 ]
+			]
+		]
+	]
+	#---------------------------------------------- EGIPTO ----------
+	[
+		.GRUPO
+		[
+			.IDX 7
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 29 ]
+				[.IDX_PROVINCIA 30 ]
+			]
+		]
+	]
+	#---------------------------------------------- DOS_SICILIAS ----------
+	[
+		.GRUPO
+		[
+			.IDX 8
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 31 ]
+				[.IDX_PROVINCIA 32 ]
+			]
+		]
+	]
+	#---------------------------------------------- DINAMARCA ----------
+	[
+		.GRUPO
+		[
+			.IDX 9
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 33 ]
+				[.IDX_PROVINCIA 34 ]
+			]
+		]
+	]
+	#---------------------------------------------- SUECIA ----------
+	[
+		.GRUPO
+		[
+			.IDX 10
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 35 ]
+				[.IDX_PROVINCIA 36 ]
+			]
+		]
+	]
+	#---------------------------------------------- PORTUGAL ----------
+	[
+		.GRUPO
+		[
+			.IDX 11
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 37 ]
+				[.IDX_PROVINCIA 38 ]
+			]
+		]
+	]
+	#---------------------------------------------- LOMBARDIA ----------
+	[
+		.GRUPO
+		[
+			.IDX 12
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 39 ]
+				[.IDX_PROVINCIA 40 ]
+			]
+		]
+	]
+	#---------------------------------------------- PIAMONTE ----------
+	[
+		.GRUPO
+		[
+			.IDX 13
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 41 ]
+			]
+		]
+	]
+	#---------------------------------------------- EPAPALES ----------
+	[
+		.GRUPO
+		[
+			.IDX 14
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 42 ]
+			]
+		]
+	]
+	#---------------------------------------------- RHELVETICA ----------
+	[
+		.GRUPO
+		[
+			.IDX 15
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 43 ]
+			]
+		]
+	]
+	#---------------------------------------------- HANNOVER ----------
+	[
+		.GRUPO
+		[
+			.IDX 16
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 44 ]
+			]
+		]
+	]
+	#---------------------------------------------- BATAVIA ----------
+	[
+		.GRUPO
+		[
+			.IDX 17
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 45 ]
+			]
+		]
+	]
+	#---------------------------------------------- SAJONIA ----------
+	[
+		.GRUPO
+		[
+			.IDX 18
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 46 ]
+			]
+		]
+	]
+	#---------------------------------------------- POLONIA ----------
+	[
+		.GRUPO
+		[
+			.IDX 19
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 47 ]
+			]
+		]
+	]
+	#---------------------------------------------- MOLDAVIA ----------
+	[
+		.GRUPO
+		[
+			.IDX 20
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 48 ]
+			]
+		]
+	]
+	#---------------------------------------------- MARRUECOS ----------
+	[
+		.GRUPO
+		[
+			.IDX 21
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 49 ]
+			]
+		]
+	]
+	#---------------------------------------------- TUNEZ ----------
+	[
+		.GRUPO
+		[
+			.IDX 22
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 50 ]
+			]
+		]
+	]
+	#---------------------------------------------- TRIPOLITANIA ----------
+	[
+		.GRUPO
+		[
+			.IDX 23
+			.PROVINCIAS
+			[
+				[.IDX_PROVINCIA 51 ]
+			]
+		]
+	]
+] # ~ GRUPOS
