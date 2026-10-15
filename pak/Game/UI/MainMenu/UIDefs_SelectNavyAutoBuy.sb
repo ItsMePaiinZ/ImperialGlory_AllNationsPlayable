@@ -1,0 +1,5888 @@
+#==================================================================================================
+#  CONFIGURACIONES PARA COMPRA AUTOMATICA EN LAS PANTALLAS DE QUICK GAME
+#================================================================================================== 
+.AUTOBUY
+[
+ 
+#------------------------------------------------ GRAN BRETANYA ----------------------------------- 
+[
+  .PAIS "GRAN_BRETANYA"
+  .CONFIGS
+  [
+    #-------------------------------------------- GRAN BRETANYA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		    [ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- GRAN BRETANYA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- GRAN BRETANYA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- GRAN BRETANYA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+  		  [ .TIPO "FRAGATA"   .EXP 1 ]
+	    	[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- GRAN BRETANYA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- GRAN BRETANYA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- GRAN BRETANYA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- GRAN BRETANYA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		    [ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+		    [ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- GRAN BRETANYA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- GRAN BRETANYA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- GRAN BRETANYA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- GRAN BRETANYA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- GRAN BRETANYA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- GRAN BRETANYA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+		    [ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- GRAN BRETANYA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+  ] # CONFIGS
+] 
+
+#------------------------------------------------ FRANCIA ----------------------------------- 
+[
+  .PAIS "FRANCIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- FRANCIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+   ] # CONFIGS
+]
+
+#------------------------------------------------ AUSTRIA ----------------------------------- 
+[
+  .PAIS "AUSTRIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- AUSTRIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- AUSTRIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- AUSTRIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- AUSTRIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- AUSTRIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+
+#------------------------------------------------ RUSIA ----------------------------------- 
+[
+  .PAIS "RUSIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- RUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	 #-------------------------------------------- RUSIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+
+#------------------------------------------------ PRUSIA ----------------------------------- 
+[
+  .PAIS "PRUSIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- PRUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	 #-------------------------------------------- PRUSIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#--------------------------------------------PRUSIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+
+
+#------------------------------------------------ [MOD] minor nations (copies of a great power) ----
+#---- ESPANYA (as FRANCIA)
+[
+  .PAIS "ESPANYA"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- FRANCIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+   ] # CONFIGS
+]
+#---- PORTUGAL (as FRANCIA)
+[
+  .PAIS "PORTUGAL"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- FRANCIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+   ] # CONFIGS
+]
+#---- EPAPALES (as FRANCIA)
+[
+  .PAIS "EPAPALES"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- FRANCIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+   ] # CONFIGS
+]
+#---- E_PAPALES (as FRANCIA)
+[
+  .PAIS "E_PAPALES"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- FRANCIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+   ] # CONFIGS
+]
+#---- DOS_SICILIAS (as FRANCIA)
+[
+  .PAIS "DOS_SICILIAS"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- FRANCIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+   ] # CONFIGS
+]
+#---- PIAMONTE (as FRANCIA)
+[
+  .PAIS "PIAMONTE"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- FRANCIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+   ] # CONFIGS
+]
+#---- LOMBARDIA (as FRANCIA)
+[
+  .PAIS "LOMBARDIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- FRANCIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+   ] # CONFIGS
+]
+#---- RHELVETICA (as FRANCIA)
+[
+  .PAIS "RHELVETICA"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- FRANCIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+   ] # CONFIGS
+]
+#---- R_HELVETICA (as FRANCIA)
+[
+  .PAIS "R_HELVETICA"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- FRANCIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+   ] # CONFIGS
+]
+#---- BATAVIA (as FRANCIA)
+[
+  .PAIS "BATAVIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- FRANCIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- FRANCIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- FRANCIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+		    [ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+   ] # CONFIGS
+]
+#---- HANNOVER (as PRUSIA)
+[
+  .PAIS "HANNOVER"
+  .CONFIGS
+  [
+    #-------------------------------------------- PRUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	 #-------------------------------------------- PRUSIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#--------------------------------------------PRUSIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+#---- SAJONIA (as PRUSIA)
+[
+  .PAIS "SAJONIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- PRUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	 #-------------------------------------------- PRUSIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#--------------------------------------------PRUSIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+#---- DINAMARCA (as PRUSIA)
+[
+  .PAIS "DINAMARCA"
+  .CONFIGS
+  [
+    #-------------------------------------------- PRUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	 #-------------------------------------------- PRUSIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#--------------------------------------------PRUSIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+#---- SUECIA (as PRUSIA)
+[
+  .PAIS "SUECIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- PRUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	 #-------------------------------------------- PRUSIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#--------------------------------------------PRUSIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- PRUSIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- PRUSIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+#---- POLONIA (as AUSTRIA)
+[
+  .PAIS "POLONIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- AUSTRIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- AUSTRIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- AUSTRIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- AUSTRIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- AUSTRIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+#---- MOLDAVIA (as AUSTRIA)
+[
+  .PAIS "MOLDAVIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- AUSTRIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	 #-------------------------------------------- AUSTRIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- AUSTRIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 2 ]
+    		[ .TIPO "FRAGATA"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+    		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "FRAGATA"   .EXP 3 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+      ]
+    ]
+    #-------------------------------------------- AUSTRIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 2 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+    		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- AUSTRIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- AUSTRIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+#---- OTOMANO (as RUSIA)
+[
+  .PAIS "OTOMANO"
+  .CONFIGS
+  [
+    #-------------------------------------------- RUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	 #-------------------------------------------- RUSIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+#---- EGIPTO (as RUSIA)
+[
+  .PAIS "EGIPTO"
+  .CONFIGS
+  [
+    #-------------------------------------------- RUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	 #-------------------------------------------- RUSIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+#---- MARRUECOS (as RUSIA)
+[
+  .PAIS "MARRUECOS"
+  .CONFIGS
+  [
+    #-------------------------------------------- RUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	 #-------------------------------------------- RUSIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+#---- TUNEZ (as RUSIA)
+[
+  .PAIS "TUNEZ"
+  .CONFIGS
+  [
+    #-------------------------------------------- RUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	 #-------------------------------------------- RUSIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+#---- TRIPOLITANIA (as RUSIA)
+[
+  .PAIS "TRIPOLITANIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- RUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	 #-------------------------------------------- RUSIA LOW 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA LOW 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 2-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+        [ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 3-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 4-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 1 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+		[ .TIPO "CORBETA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA MID 5-------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 2 ]
+        [ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+    #-------------------------------------------- RUSIA HIGH 2------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 3------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "CORBETA"   .EXP 3 ]
+	  ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 4------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+		[ .TIPO "FRAGATA"   .EXP 1 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+	#-------------------------------------------- RUSIA HIGH 5------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "NAVIO"   .EXP 3 ]
+        [ .TIPO "NAVIO"   .EXP 3 ]
+		[ .TIPO "NAVIO"   .EXP 2 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "NAVIO"   .EXP 1 ]
+		[ .TIPO "FRAGATA"   .EXP 2 ]
+      ]
+      .TECHS
+      [
+        
+      ]
+    ]
+  ] # CONFIGS
+]
+] # AUTOBUY

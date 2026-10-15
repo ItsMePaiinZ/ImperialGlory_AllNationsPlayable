@@ -1,5 +1,5 @@
 ﻿<#
-  Imperial Glory - All Nations Playable  v1.1
+  Imperial Glory - All Nations Playable  v1.2
   Patcher for the Steam version
 
   What this script does:
@@ -24,7 +24,7 @@ $LinkName  = 'Imperial Glory - All Nations.lnk'
 $CompatKey = 'HKCU:\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers'
 
 $OrigMD5 = 'd2c8a4580bbcfb34a37dae3214b198ea'   # ImperialGlory.exe, Steam version
-$ModMD5  = 'c0f421a34b57ebb35cf60b93970da764'   # expected result
+$ModMD5  = '2747a4b214e772c1184ba998c25b467e'   # expected result
 
 $Patches = @(
     @(0x3ca03d, '7444', '9090'),  # VA 0x7ca03d
@@ -63,7 +63,47 @@ $Patches = @(
     @(0x3cb2b1, '8b4c24788b7c2410', 'e86a640b00909090'),  # VA 0x7cb2b1
     @(0x481600, 'cccccccccccccccccccccccccccccc', '414c4c4e4154494f4e532e50414b00'),  # VA 0x881600
     @(0x481620, 'cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc', '6a0e68001688008d4c2418e86000b8ff8d44241050e8b64bbcff83c404837c24281072228b4c241451e87b46b8ff83c404c74424280f000000c744242400000000c6442414008b8c2430020000e9ef52bcff'),  # VA 0x881620
-    @(0x4695a, '8b8c2430020000', 'e9c1ac43009090')  # VA 0x44695a
+    @(0x4695a, '8b8c2430020000', 'e9c1ac43009090'),  # VA 0x44695a
+    @(0x481800, 'cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc', '455350414e5941004c544558545f504149535f455350414e594100504f52545547414c004c544558545f504149535f504f52545547414c0045504150414c4553004c544558545f504149535f455f504150414c455300455f504150414c455300444f535f534943494c494153004c544558545f504149535f444f535f534943494c494153005049414d4f4e5445004c544558545f504149535f5049414d4f4e5445004c4f4d424152444941004c544558545f504149535f4c4f4d424152444941005248454c564554494341004c544558545f504149535f5248454c56455449434100525f48454c5645544943410042415441564941004c544558545f504149535f424154415649410048414e4e4f564552004c544558545f504149535f48414e4e4f5645520053414a4f4e4941004c544558545f504149535f53414a4f4e49410044494e414d41524341004c544558545f504149535f44494e414d4152434100535545434941004c544558545f504149535f53554543494100504f4c4f4e4941004c544558545f504149535f504f4c4f4e4941004d4f4c4441564941004c544558545f504149535f4d4f4c4441564941004f544f4d414e4f004c544558545f504149535f4f544f4d414e4f0045474950544f004c544558545f504149535f45474950544f004d4152525545434f53004c544558545f504149535f4d4152525545434f530054554e455a004c544558545f504149535f54554e455a00545249504f4c4954414e4941004c544558545f504149535f545249504f4c4954414e4941000018880088418c00081888001b18880088418c00241888003818880088418c00411888005618880088418c00411888006018880088418c006d1888008518880088418c008e188800a218880088418c00ac188800c118880088418c00cc188800e218880088418c00cc188800ee18880088418c00f61888000919880080418c00121988002619880080418c002e1988004119880080418c004b1988006019880080418c006719880079198800508c8b008119880094198800508c8b009d198800b119880078418c00b9198800cc19880078418c00d3198800e519880078418c00ef198800041a880078418c000a1a88001b1a880078418c00281a8800000000000000000000000000'),  # VA 0x881800
+    @(0x481740, 'cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc', '5356578b44241050e8c3e3caff83c40489c3c705402f940000000000be401a88008b0685c0743b50e893f0caff83c40489c750e818f1caff83c40439df740583c60cebdd8b4608a3402f940053e8fef0caff83c404ff7604e863f0caff83c40489c389d85f5e5bc3'),  # VA 0x881740
+    @(0x4817b0, 'cccccccccccccccccccccccccccccccccccccccc', '50a1402f940085c074048944240858e93cf0caff'),  # VA 0x8817b0
+    @(0x3d064f, 'e8bcf4d5ff', 'e8ec100b00'),  # VA 0x7d064f
+    @(0x3d13d6, 'e835e7d5ff', 'e865030b00'),  # VA 0x7d13d6
+    @(0x3d1fb4, 'e857dbd5ff', 'e887f70a00'),  # VA 0x7d1fb4
+    @(0x3d5924, 'e8e7a1d5ff', 'e817be0a00'),  # VA 0x7d5924
+    @(0x3d7844, 'e8c782d5ff', 'e8f79e0a00'),  # VA 0x7d7844
+    @(0x3d0687, 'e87401d6ff', 'e824110b00'),  # VA 0x7d0687
+    @(0x3d06f6, 'e80501d6ff', 'e8b5100b00'),  # VA 0x7d06f6
+    @(0x3d0765, 'e89600d6ff', 'e846100b00'),  # VA 0x7d0765
+    @(0x3d07d4, 'e82700d6ff', 'e8d70f0b00'),  # VA 0x7d07d4
+    @(0x3d0843, 'e8b8ffd5ff', 'e8680f0b00'),  # VA 0x7d0843
+    @(0x3d1fec, 'e80fe8d5ff', 'e8bff70a00'),  # VA 0x7d1fec
+    @(0x3d205b, 'e8a0e7d5ff', 'e850f70a00'),  # VA 0x7d205b
+    @(0x3d20ca, 'e831e7d5ff', 'e8e1f60a00'),  # VA 0x7d20ca
+    @(0x3d2139, 'e8c2e6d5ff', 'e872f60a00'),  # VA 0x7d2139
+    @(0x3d21a8, 'e853e6d5ff', 'e803f60a00'),  # VA 0x7d21a8
+    @(0x3d595f, 'e89caed5ff', 'e84cbe0a00'),  # VA 0x7d595f
+    @(0x3d59d2, 'e829aed5ff', 'e8d9bd0a00'),  # VA 0x7d59d2
+    @(0x3d5a45, 'e8b6add5ff', 'e866bd0a00'),  # VA 0x7d5a45
+    @(0x3d5ab8, 'e843add5ff', 'e8f3bc0a00'),  # VA 0x7d5ab8
+    @(0x3d5b2b, 'e8d0acd5ff', 'e880bc0a00'),  # VA 0x7d5b2b
+    @(0x3d787f, 'e87c8fd5ff', 'e82c9f0a00'),  # VA 0x7d787f
+    @(0x3d78f2, 'e8098fd5ff', 'e8b99e0a00'),  # VA 0x7d78f2
+    @(0x3d7965, 'e8968ed5ff', 'e8469e0a00'),  # VA 0x7d7965
+    @(0x3d79d8, 'e8238ed5ff', 'e8d39d0a00'),  # VA 0x7d79d8
+    @(0x3d7a4b, 'e8b08dd5ff', 'e8609d0a00'),  # VA 0x7d7a4b
+    @(0x481b60, 'cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc', '88418c0002000000508c8b000300000078418c000400000080418c00050000000000000000000000'),  # VA 0x881b60
+    @(0x481da0, 'cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc', '47616d655c55495c4d61696e4d656e755c54726f7061735c426f746f6e65735c506c616e74696c6c614172616265732e74676100'),  # VA 0x881da0
+    @(0x481dd4, 'cccccccccccccccccccccccccccccccccccccccccccccccc', 'b1198800cc198800e5198800041a88001b1a880000000000'),  # VA 0x881dd4
+    @(0x481e00, 'cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc', '9c608b85140100008944241c83ec08894424048d4c2404518d542404528b85d80000008b48208b491883c128e8dfe5d3ff8b85d80000008b40208b40188b40308b0c2439c10f84b50000008b510c89d6bfd41d88008b0785c0745150e89fe9caff83c40489c350e824eacaff83c40439f3740583c704ebdd833d442f940000751268a01d8800e875e9caff83c404a3442f9400b8442f940029e82d74010000c1f8028944242483c408619dc389f252e88cf8ffff83c40489c6833d402f940000742fbf601b88008b0785c0742450e82de9caff83c40489c350e8b2e9caff83c40439f3740583c708ebdd8b47048944242456e899e9caff83c40483c408619dc383c408619dc3'),  # VA 0x881e00
+    @(0x481f10, 'cccccccccccccccccccc', '50e8eafeffff89c158c3'),  # VA 0x881f10
+    @(0x481f20, 'cccccccccccccccccccc', '50e8dafeffff89c258c3'),  # VA 0x881f20
+    @(0x3d02b7, '8b8d14010000', 'e8541c0b0090'),  # VA 0x7d02b7
+    @(0x3d02e3, '8b8514010000', 'e8181b0b0090'),  # VA 0x7d02e3
+    @(0x3d0320, '8b9514010000', 'e8fb1b0b0090'),  # VA 0x7d0320
+    @(0x481c70, 'cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc', '0018880088418c00081888001b18880088418c00241888003818880088418c00411888005618880088418c00411888006018880088418c006d1888008518880088418c008e188800a218880088418c00ac188800c118880088418c00cc188800e218880088418c00cc188800ee18880088418c00f61888000919880080418c00121988002619880080418c002e1988004119880080418c004b1988006019880080418c006719880079198800508c8b008119880094198800508c8b009d198800000000000000000000000000'),  # VA 0x881c70
+    @(0x481d40, 'cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc', '5356578b44241050e8c3ddcaff83c40489c3be701c88008b0685c0743350e89deacaff83c40489c750e822ebcaff83c40439df740583c60cebdd53e810ebcaff83c404ff7604e875eacaff83c40489c389d85f5e5bc3'),  # VA 0x881d40
+    @(0x3ce675, 'e89614d6ff', 'e8c6360b00')  # VA 0x7ce675
 )
 
 function Info([string]$msg, [string]$color = 'Gray') { Write-Host $msg -ForegroundColor $color }
@@ -88,7 +128,7 @@ function DesktopLink {
 }
 
 Write-Host ''
-Info '=== Imperial Glory - All Nations Playable  v1.1 ===' 'Cyan'
+Info '=== Imperial Glory - All Nations Playable  v1.2 ===' 'Cyan'
 Write-Host ''
 
 if ($Action -eq 'uninstall') {

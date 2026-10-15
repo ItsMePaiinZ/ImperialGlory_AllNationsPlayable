@@ -21,7 +21,7 @@ import hashlib, json, os, re, struct, sys, zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "src"))
-from patches import PATCHES, TURN_ORDER_NAMES          # noqa: E402
+from patches import PATCHES, TURN_ORDER_NAMES, GREAT_POWER_STRINGS  # noqa: E402
 
 import pefile                                           # noqa: E402
 from keystone import Ks, KS_ARCH_X86, KS_MODE_32        # noqa: E402
@@ -51,8 +51,8 @@ def build_exe(exe_path):
     pe = pefile.PE(data=bytes(data))
     off = lambda va: pe.get_offset_from_rva(va - pe.OPTIONAL_HEADER.ImageBase)
 
-    # nation-name strings used by the turn-order table must exist unchanged
-    for va, name in TURN_ORDER_NAMES:
+    # existing strings the new code points to must be where we expect them
+    for va, name in TURN_ORDER_NAMES + [(v, n) for n, v in GREAT_POWER_STRINGS.items()]:
         o = off(va)
         assert data[o:o + len(name) + 1] == name.encode() + b"\0", (hex(va), name)
     table = b"".join(struct.pack("<I", va) for va, _ in TURN_ORDER_NAMES) + b"\0" * 4
@@ -70,10 +70,13 @@ def build_exe(exe_path):
         new += b"\x90" * p.get("pad", 0)
         o = off(va)
         old = bytes(data[o:o + len(new)])
-        if p["orig"] is None:
+        orig = p.get("orig")
+        if "call_from" in p:           # original instruction: call <call_from>
+            orig = "e8" + struct.pack("<i", p["call_from"] - (va + 5)).hex()
+        if orig is None:
             assert old == b"\xcc" * len(new), f"{va:#x}: cave is not free"
         else:
-            assert old == bytes.fromhex(p["orig"]), \
+            assert old == bytes.fromhex(orig), \
                 f"{va:#x}: unexpected original bytes {old.hex()}"
         data[o:o + len(new)] = new
         out.append({"va": hex(va), "off": hex(o), "old": old.hex(),
@@ -98,12 +101,19 @@ def build_pak():
         for fn in fns:
             files.append(os.path.relpath(os.path.join(dp, fn), pak_dir).replace(os.sep, "/"))
     order = [  # same order as the release archive
+        # v1.0 / v1.1: campaign
         "Game/GameModes/Gestion/DefOrdenTurnos.sb",
         "Game/UI/MainMenu/SelectEmpire/UIDefs_MapaPaisesSelectEmpire.sb",
         "Game/UI/ModeloGestion/Iconos/UIDefs_PoolIconosNotificaciones.sb",
         "Game/UI/MainMenu/UIDefs_SelectEmpire.sb",
         "Game/UI/MainMenu/SelectEmpire/UIDefs_ZSToolTips.sb",
         "Game/UI/MainMenu/SelectEmpire/UIDefs_Banderas.sb",
+        # v1.2: custom battle
+        "Game/UI/MainMenu/UIDefs_SelectArmyAutoBuy.sb",
+        "Game/UI/MainMenu/UIDefs_SelectNavyAutoBuy.sb",
+        "Game/UI/MainMenu/Tropas/Iconos/Genericos/UIDefs_PoolTropasIcons.sb",
+        "Game/UI/MainMenu/UI_DefsSelectArmyButtons.sb",
+        "Game/UI/MainMenu/Tropas/Botones/PlantillaArabes.tga",
     ]
     assert sorted(files) == sorted(order), files
     dirs = sorted({"/".join(f.split("/")[:i]) + "/" for f in order

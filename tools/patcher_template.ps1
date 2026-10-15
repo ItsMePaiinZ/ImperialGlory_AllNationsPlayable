@@ -1,5 +1,5 @@
 ﻿<#
-  Imperial Glory - All Nations Playable  v1.1
+  Imperial Glory - All Nations Playable  v1.2
   Patcher for the Steam version
 
   What this script does:
@@ -52,7 +52,7 @@ function DesktopLink {
 }
 
 Write-Host ''
-Info '=== Imperial Glory - All Nations Playable  v1.1 ===' 'Cyan'
+Info '=== Imperial Glory - All Nations Playable  v1.2 ===' 'Cyan'
 Write-Host ''
 
 if ($Action -eq 'uninstall') {

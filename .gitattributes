@@ -5,3 +5,4 @@ pak/**                       -text
 tools/patcher_template.ps1   -text
 *.PAK                        binary
 *.jpg                        binary
+*.tga                        binary

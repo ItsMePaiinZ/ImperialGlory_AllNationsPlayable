@@ -3,13 +3,13 @@
 </p>
 
 <p align="center">
-  <b>Play the <i>Imperial Glory</i> campaign as any of the 24 nations – from Portugal to the Ottoman Empire.</b><br>
+  <b>Play <i>Imperial Glory</i> as any of the 24 nations – from Portugal to the Ottoman Empire – in the campaign and in custom battles.</b><br>
   No bonuses, no new units, no balance changes. Just every nation playable.
 </p>
 
 <p align="center">
   <a href="https://www.nexusmods.com/imperialglory/mods/4"><img alt="Download on Nexus Mods" src="https://img.shields.io/badge/Download-Nexus%20Mods-d98f40?style=for-the-badge"></a>
-  <img alt="Version 1.1" src="https://img.shields.io/badge/version-1.1-b8860b?style=for-the-badge">
+  <img alt="Version 1.2" src="https://img.shields.io/badge/version-1.2-b8860b?style=for-the-badge">
   <img alt="Steam version" src="https://img.shields.io/badge/game-Steam%20version-1b2838?style=for-the-badge">
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-555?style=for-the-badge"></a>
 </p>
@@ -32,6 +32,9 @@
   Batavian Republic · Denmark · Egypt · Hanover · Helvetic Republic · Kingdom of the Two Sicilies · Lombardy · Moldavia · Morocco · Ottoman Empire · Papal States · Piedmont · Poland · Portugal · Saxony · Spain · Sweden · Tripolitania · Tunisia
 - Conquest, permanent occupation and annexation through sympathy work for minor nations too.
 - Every nation can be clicked on the selection map, including North Africa. Each nation shows its own flag.
+- **Custom battles with every nation** (land and naval): real nation names, purchasable units, working Auto-Buy.
+  The Arab nations (Ottoman Empire, Egypt, Morocco, Tunisia, Tripolitania) field Arab troops, including the camel riders, with their own unit pictures.
+  European minor nations use the units of a related great power (France, Prussia or Austria).
 - Your original `ImperialGlory.exe` stays untouched. The mod runs as a separate `ImperialGlory_AllNations.exe`.
 - Uninstall with one click.
 
@@ -55,7 +58,7 @@ The download contains **no .exe or .dll files**. All it contains:
 |---|---|
 | `Install.bat` / `Uninstall.bat` | A single line that runs `patcher.ps1` with PowerShell. |
 | `patcher.ps1` | Plain-text installer you can read. It checks the MD5 of your `ImperialGlory.exe` and writes a patched **copy**. Then it checks the result's MD5 and copies `ALLNATIONS.PAK`. Optionally it sets the compatibility flag and creates a shortcut. |
-| `ALLNATIONS.PAK` | A normal ZIP archive with six modified text data files of the game. |
+| `ALLNATIONS.PAK` | A normal ZIP archive with ten modified text data files of the game and one image (unit pictures). |
 | `README.txt` | User documentation. |
 
 The installer does not download anything and does not use the network. Uninstalling removes exactly what the installer created.
@@ -74,10 +77,10 @@ python tools/build.py "C:\Program Files (x86)\Steam\steamapps\common\Imperial Gl
 The script writes everything to `out/` and compares it with the released files in `mod/`. Expected output:
 
 ```
-37 patches applied
-ImperialGlory_AllNations.exe  MD5 c0f421a34b57ebb35cf60b93970da764
-patcher.ps1                   MD5 b420bf96623e47355fa534b017b4347e  identical to release
-ALLNATIONS.PAK                MD5 8d5570b81e09774fd2bb0325ce0f3e01  identical to release
+77 patches applied
+ImperialGlory_AllNations.exe  MD5 2747a4b214e772c1184ba998c25b467e
+patcher.ps1                   MD5 14a8955cb6792f3b9af9be25dd0aeff6  identical to release
+ALLNATIONS.PAK                MD5 98b47aa950af162845e7cca6c03bcc64  identical to release
 exe MD5 matches the MD5 the release installer expects: True
 ```
 
@@ -92,10 +95,10 @@ exe MD5 matches the MD5 the release installer expects: True
 ### Repository layout
 
 ```
-src/patches.py              all 37 exe changes as commented x86 assembly
+src/patches.py              all 77 exe changes as commented x86 assembly
 tools/build.py              build + comparison with the release
 tools/patcher_template.ps1  the installer without the generated patch table
-pak/Game/...                the six data files that go into ALLNATIONS.PAK
+pak/Game/...                the eleven files that go into ALLNATIONS.PAK
 mod/                        the released files, unchanged, for comparison
 docs/                       images for this page
 ```
@@ -114,6 +117,9 @@ The Steam `ImperialGlory.exe` is a 32-bit program without ASLR, so all addresses
 | 6 | Progress panel | NULL checks for great-power entries that do not exist when a minor nation is played. |
 | 7 | Selection list | Two-pass list: great powers first. Minor-nation rows are moved off-screen, so the list no longer covers the OK button. |
 | 8 | Data loading | `ALLNATIONS.PAK` is mounted after the game's own archives. |
+| 9 | Custom battle screens *(v1.2)* | Each minor nation gets the screen layout of a related great power (`ALIAS_TABLE`), but the header keeps its real name (`LTEXT_PAIS_*`). |
+| 10 | Unit buttons *(v1.2)* | The army screen uses the button template of the related great power. Arab nations use their own template, `PlantillaArabes.tga`. |
+| 11 | Unit icons *(v1.2)* | European minors use the icons of their great power. Arab nations use their own icon entries from `ALLNATIONS.PAK`. |
 
 The full assembly with comments is in [`src/patches.py`](src/patches.py).
 
@@ -126,15 +132,20 @@ The full assembly with comments is in [`src/patches.py`](src/patches.py).
 | `Game/UI/ModeloGestion/Iconos/UIDefs_PoolIconosNotificaciones.sb` | start icons for minor nations |
 | `Game/UI/MainMenu/UIDefs_SelectEmpire.sb`, `.../SelectEmpire/UIDefs_ZSToolTips.sb` | smaller info box below the map, so North Africa is no longer hidden |
 | `Game/UI/MainMenu/SelectEmpire/UIDefs_Banderas.sb` | each nation's own flag in the info box |
+| `Game/UI/MainMenu/UIDefs_SelectArmyAutoBuy.sb`, `UIDefs_SelectNavyAutoBuy.sb` | Auto-Buy lists for every nation |
+| `Game/UI/MainMenu/UI_DefsSelectArmyButtons.sb` | buttons for the camel riders and Arab elite cavalry |
+| `Game/UI/MainMenu/Tropas/Iconos/Genericos/UIDefs_PoolTropasIcons.sb` | icon entries for the Arab nations' units |
+| `Game/UI/MainMenu/Tropas/Botones/PlantillaArabes.tga` | button template with the Arab unit pictures, made from the game's own Egyptian unit icons |
 
 ## Version history
 
 | Version | Changes |
 |---|---|
+| **1.2** | Custom battles with all 24 nations (land and naval): real nation names, purchasable units, working Auto-Buy. Arab nations get Arab troops, including camel riders, and their own unit pictures. |
 | **1.1** | North African nations can be clicked on the map. The list on the right no longer covers the OK button. Minor nations show their own flag instead of the Austrian coat of arms. |
 | **1.0** | First release. |
 
-**Known limitations:** minor nations have no resource bars in the selection menu, use a placeholder start icon and have no victory sequence of their own. Savegames with a minor nation load only in `ImperialGlory_AllNations.exe`.
+**Known limitations:** minor nations have no resource bars in the selection menu, use a placeholder start icon and have no victory sequence of their own. In custom battles, European minor nations wear the uniforms of their related great power. Savegames with a minor nation load only in `ImperialGlory_AllNations.exe`.
 
 ## License
 

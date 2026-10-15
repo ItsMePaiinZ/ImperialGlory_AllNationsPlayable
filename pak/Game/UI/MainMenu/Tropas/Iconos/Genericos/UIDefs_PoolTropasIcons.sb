@@ -1,0 +1,1049 @@
+###############################################################################################################
+# Tropas genericas
+###############################################################################################################
+
+#------------------------------------------------ ESPANYA_CAB_LANCERO -----------------------------------------------
+[
+ .KEY ESPANYA_CAB_LANCERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 1 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESPANYA_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 1 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ ESPANYA_FUSILERO -----------------------------------------------
+[
+ .KEY ESPANYA_FUSILERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 407 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESPANYA_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 407 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ PORTUGAL_CAB_DRAGON -----------------------------------------------
+[
+ .KEY PORTUGAL_CAB_DRAGON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 175 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY PORTUGAL_CAB_DRAGON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 175 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ HANNOVER_GRANADERO -----------------------------------------------
+[
+ .KEY HANNOVER_GRANADERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY HANNOVER_GRANADERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ HANNOVER_MILICIA -----------------------------------------------
+[
+ .KEY HANNOVER_MILICIA_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY HANNOVER_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ HANNOVER_CAB_LANCERO -----------------------------------------------
+[
+ .KEY HANNOVER_CAB_LANCERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 1 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY HANNOVER_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 1 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ BATAVIA_MILICIA -----------------------------------------------
+[
+ .KEY BATAVIA_MILICIA_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY BATAVIA_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ BATAVIA_CAB_HUSAR -----------------------------------------------
+[
+ .KEY BATAVIA_CAB_HUSAR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 117 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY BATAVIA_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 117 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ BATAVIA_FUSILERO -----------------------------------------------
+[
+ .KEY BATAVIA_FUSILERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 407 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY BATAVIA_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 407 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ POLONIA_CAB_HUSAR -----------------------------------------------
+[
+ .KEY POLONIA_CAB_HUSAR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 117 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY POLONIA_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 117 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ EGIPTO_OBUS -----------------------------------------------
+[
+ .KEY EGIPTO_OBUS_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_OBUS_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ EGIPTO_CANON -----------------------------------------------
+[
+ .KEY EGIPTO_CANON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CANON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+###############################################################################################################
+# [MOD] Icons for the Arab nations in the quick-battle army screen (re-using the existing Egyptian icons)
+###############################################################################################################
+
+[
+ .KEY OTOMANO_MILICIA_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 407 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 407 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_FUSILERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAZADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAZADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_GRANADERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_GRANADERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_ELITE_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAB_LANCERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 59 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 59 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAB_HUSAR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAB_DRAGON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAB_DRAGON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAB_CORACERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAB_CORACERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAB_ELITE_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAB_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAB_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAB_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAM_LANCERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 291 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAM_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 291 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAM_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 233 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CAM_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 233 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CANON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CANON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_OBUS_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_OBUS_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CANON_CAMP_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CANON_CAMP_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_MORTERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_MORTERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CANON_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_CANON_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_OBUS_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY OTOMANO_OBUS_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CAZADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CAZADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_GRANADERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_GRANADERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_ELITE_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CAB_HUSAR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CAB_DRAGON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CAB_DRAGON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CAB_CORACERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CAB_CORACERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CANON_CAMP_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CANON_CAMP_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_MORTERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_MORTERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CANON_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_CANON_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_OBUS_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY EGIPTO_OBUS_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_MILICIA_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 407 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 407 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_FUSILERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAZADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAZADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_GRANADERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_GRANADERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_ELITE_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAB_LANCERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 59 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 59 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAB_HUSAR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAB_DRAGON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAB_DRAGON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAB_CORACERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAB_CORACERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAB_ELITE_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAB_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAB_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAB_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAM_LANCERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 291 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAM_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 291 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAM_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 233 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CAM_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 233 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CANON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CANON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_OBUS_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_OBUS_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CANON_CAMP_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CANON_CAMP_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_MORTERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_MORTERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CANON_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_CANON_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_OBUS_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY MARRUECOS_OBUS_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_MILICIA_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 407 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 407 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_FUSILERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAZADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAZADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_GRANADERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_GRANADERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_ELITE_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAB_LANCERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 59 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 59 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAB_HUSAR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAB_DRAGON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAB_DRAGON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAB_CORACERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAB_CORACERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAB_ELITE_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAB_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAB_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAB_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAM_LANCERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 291 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAM_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 291 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAM_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 233 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CAM_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 233 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CANON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CANON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_OBUS_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_OBUS_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CANON_CAMP_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CANON_CAMP_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_MORTERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_MORTERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CANON_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_CANON_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_OBUS_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TUNEZ_OBUS_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_MILICIA_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 407 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 407 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_FUSILERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAZADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAZADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_GRANADERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_GRANADERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_ELITE_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 1 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAB_LANCERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 59 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 59 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAB_HUSAR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAB_DRAGON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAB_DRAGON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAB_CORACERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAB_CORACERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAB_ELITE_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAB_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 117 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAB_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAB_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAM_LANCERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 291 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAM_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 291 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAM_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 233 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CAM_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Especiales\IconosEspeciales.tga" .U 233 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CANON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CANON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_OBUS_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_OBUS_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CANON_CAMP_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CANON_CAMP_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_MORTERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_MORTERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CANON_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_CANON_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 291 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_OBUS_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY TRIPOLITANIA_OBUS_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Genericos\IconosGenericos.tga" .U 349 .V 258 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]

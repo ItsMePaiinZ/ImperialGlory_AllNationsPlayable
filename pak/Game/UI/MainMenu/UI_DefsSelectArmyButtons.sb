@@ -1,0 +1,339 @@
+####################################################################################################
+# Botones de seleccion de army
+####################################################################################################
+
+.POSICIONAMIENTO_TROPAS
+[
+  .X 512
+  .Y 254
+  .SX 87
+]
+
+.FILE_AUSTRIA    "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga"
+.FILE_FRANCIA    "Game\UI\MainMenu\Tropas\Botones\PlantillaFrancia.tga"
+.FILE_INGLATERRA "Game\UI\MainMenu\Tropas\Botones\PlantillaInglaterra.tga"
+.FILE_PRUSIA     "Game\UI\MainMenu\Tropas\Botones\PlantillaPrusia.tga"
+.FILE_RUSIA      "Game\UI\MainMenu\Tropas\Botones\PlantillaRusia.tga"
+
+.INFANTERIA
+[
+  .MILICIA
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 1 .V 1 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 1 .V 331 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 1 .V 661 ]
+    ]
+  ]
+  
+  .FUSILERO
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 77 .V 1 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 77 .V 331 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 77 .V 661 ]
+    ]
+  ]
+  
+  .TIRADOR
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 152 .V 1 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 152 .V 331 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 152 .V 661 ]
+    ]
+  ]
+  
+  
+  .CAZADOR
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 229 .V 1 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 229 .V 331 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 229 .V 661 ]
+    ]
+  ]
+  
+  .GRANADERO
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 1 .V 83 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 1 .V 413 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 1 .V 743 ]
+    ]
+  ]
+  
+  .ELITE
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 77 .V 83 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 77 .V 413 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 77 .V 743 ]
+    ]
+  ]
+]
+
+
+.CABALLERIA
+[
+  .CAB_LANCERO
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 152 .V 83 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 152 .V 413 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 152 .V 743 ]
+    ]
+  ]
+  
+  .CAB_CORACERO
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 77 .V 165 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 77 .V 495 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 77 .V 825 ]
+    ]
+  ]
+  
+  .CAB_DRAGON
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 1 .V 165 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 1 .V 495 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 1 .V 825 ]
+    ]
+  ]
+  
+  
+  .CAB_HUSAR
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 229 .V 83 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 229 .V 413 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 229 .V 743 ]
+    ]
+  ]
+  # [MOD] extra cavalry types (camels / elite cavalry of the Arab nations)
+  
+  .CAM_LANCERO
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 305 .V 1 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 305 .V 331 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 305 .V 661 ]
+    ]
+  ]
+  
+  .CAM_TIRADOR
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 381 .V 1 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 381 .V 331 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 381 .V 661 ]
+    ]
+  ]
+  
+  .CAB_ELITE
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 305 .V 83 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 305 .V 413 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 305 .V 743 ]
+    ]
+  ]
+]
+
+.ARTILLERIA
+[
+  .MORTERO
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 152 .V 165 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 152 .V 495 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 152 .V 825 ]
+    ]
+  ]
+  
+  
+  .CANON_CAMP
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 229 .V 165 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 229 .V 495 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 229 .V 825 ]
+    ]
+  ]
+  
+  
+  .CANON
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 1 .V 247 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 1 .V 577 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 1 .V 907 ]
+    ]
+  ]
+  
+  
+  .OBUS
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 77 .V 247 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 77 .V 577 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 77 .V 907 ]
+    ]
+  ]
+  
+  
+  .CANON_CAB
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 152 .V 247 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 152 .V 577 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 152 .V 907 ]
+    ]
+  ]
+  
+  
+  .OBUS_CAB
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 50
+      .X  0 .Y  0 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 229 .V 247 ] 
+  		.SELECCIONADO			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 229 .V 577 ]
+  		.PULSADO    			[ .FILE "Game\UI\MainMenu\Tropas\Botones\PlantillaAustria.tga" .U 229 .V 907 ]
+    ]
+  ]
+]
+

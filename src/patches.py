@@ -1,5 +1,5 @@
 """
-Imperial Glory - All Nations Playable v1.1
+Imperial Glory - All Nations Playable v1.2
 Source of every change made to ImperialGlory.exe (Steam version).
 
 Target: ImperialGlory.exe, Steam, MD5 d2c8a4580bbcfb34a37dae3214b198ea
@@ -23,6 +23,8 @@ nations to include (see section 3).
 Names of game functions used below (from our own analysis):
     0x530800  intern a string -> string id      (cdecl, 1 arg)
     0x530890  release a string id               (cdecl, 1 arg)
+    0x52fb10  add a reference to a string id      (cdecl, 1 arg, returns id)
+    0x5c0410  std::map::find                      (thiscall, &result, &key)
     0x5d33d0  build the list of selectable nations (thiscall, 1 arg)
     0x5d35d0  "is this nation selectable?"       (thiscall, 1 arg)
     0x6c0ad0  load the turn-order section of one nation (thiscall, 2 args)
@@ -36,7 +38,7 @@ Names of game functions used below (from our own analysis):
 
 FLAG = 0x942F00
 
-PATCHES = [
+PATCHES_V11 = [
     # ------------------------------------------------------------------
     # 1. Selection menu: the "selectable nation" check no longer rejects
     #    minor nations (original: je 0x7ca083 after the check).
@@ -134,7 +136,7 @@ PATCHES = [
          """,
          desc="Turn order: load sections for all 24 nations (cave)."),
     dict(va=0x881200, orig=None,
-         data="TURN_ORDER_TABLE",          # filled in by build.py, see below
+         data="TURN_ORDER_TABLE",          # built below from TURN_ORDER_NAMES
          desc="Turn order: table of pointers to the game's own nation-name "
               "strings (JUG_*), zero-terminated."),
     dict(va=0x6C0D30, orig="83ec185356",
@@ -385,3 +387,329 @@ TURN_ORDER_NAMES = [
     (0x8CD0B4, "JUG_MARRUECOS"),     (0x8CD0C4, "JUG_TUNEZ"),
     (0x8CD0D0, "JUG_TRIPOLITANIA"),  (0x8C44F0, "JUG_RUSIA"),
 ]
+
+
+# ======================================================================
+#  v1.2 - Custom Battle with all nations
+# ======================================================================
+#
+# The custom battle screens (army and navy) only know the five great
+# powers: the header text, the unit buttons, the unit icons and the
+# auto-buy lists are all chosen by comparing the nation's name with
+# AUSTRIA / RUSIA / PRUSIA / FRANCIA / GRAN_BRETANYA. For any other
+# nation they showed "FRANCIA", white placeholder pictures, and no unit
+# could be bought.
+#
+# Approach: every minor nation gets an "alias" great power whose screen
+# layout it uses (ALIAS_TABLE below). The real nation name is kept for
+# the header text (LTEXT_PAIS_*). The five Arab nations do not use an
+# alias for their unit pictures: they get their own button template
+# (PlantillaArabes.tga) and their own icons, both in ALLNATIONS.PAK.
+#
+# Two more bytes of unused .data are used:
+G_LTEXT   = 0x942F40   # LTEXT key of the selected minor nation, 0 = great power
+G_ARABTGA = 0x942F44   # string id of PlantillaArabes.tga, created on first use
+
+# Name strings of the great powers that already exist in the exe
+# (checked by build.py before patching).
+GREAT_POWER_STRINGS = {
+    "FRANCIA": 0x8C4188, "PRUSIA": 0x8C4180,
+    "AUSTRIA": 0x8B8C50, "RUSIA": 0x8C4178,
+}
+
+# (name used by the game, alias great power, header text key)
+ALIAS_TABLE = [
+    ("ESPANYA",      "FRANCIA", "LTEXT_PAIS_ESPANYA"),
+    ("PORTUGAL",     "FRANCIA", "LTEXT_PAIS_PORTUGAL"),
+    ("EPAPALES",     "FRANCIA", "LTEXT_PAIS_E_PAPALES"),
+    ("E_PAPALES",    "FRANCIA", "LTEXT_PAIS_E_PAPALES"),
+    ("DOS_SICILIAS", "FRANCIA", "LTEXT_PAIS_DOS_SICILIAS"),
+    ("PIAMONTE",     "FRANCIA", "LTEXT_PAIS_PIAMONTE"),
+    ("LOMBARDIA",    "FRANCIA", "LTEXT_PAIS_LOMBARDIA"),
+    ("RHELVETICA",   "FRANCIA", "LTEXT_PAIS_RHELVETICA"),
+    ("R_HELVETICA",  "FRANCIA", "LTEXT_PAIS_RHELVETICA"),
+    ("BATAVIA",      "FRANCIA", "LTEXT_PAIS_BATAVIA"),
+    ("HANNOVER",     "PRUSIA",  "LTEXT_PAIS_HANNOVER"),
+    ("SAJONIA",      "PRUSIA",  "LTEXT_PAIS_SAJONIA"),
+    ("DINAMARCA",    "PRUSIA",  "LTEXT_PAIS_DINAMARCA"),
+    ("SUECIA",       "PRUSIA",  "LTEXT_PAIS_SUECIA"),
+    ("POLONIA",      "AUSTRIA", "LTEXT_PAIS_POLONIA"),
+    ("MOLDAVIA",     "AUSTRIA", "LTEXT_PAIS_MOLDAVIA"),
+    ("OTOMANO",      "RUSIA",   "LTEXT_PAIS_OTOMANO"),
+    ("EGIPTO",       "RUSIA",   "LTEXT_PAIS_EGIPTO"),
+    ("MARRUECOS",    "RUSIA",   "LTEXT_PAIS_MARRUECOS"),
+    ("TUNEZ",        "RUSIA",   "LTEXT_PAIS_TUNEZ"),
+    ("TRIPOLITANIA", "RUSIA",   "LTEXT_PAIS_TRIPOLITANIA"),
+]
+ARAB_NATIONS = ["OTOMANO", "EGIPTO", "MARRUECOS", "TUNEZ", "TRIPOLITANIA"]
+
+
+def _u32(*vals):
+    import struct
+    return b"".join(struct.pack("<I", v) for v in vals)
+
+
+# --- string pool + ALIAS_TABLE at 0x881800 ---------------------------
+STR_BASE = 0x881800
+_blob, _addr = bytearray(), {}
+
+
+def _s(text):
+    if text not in _addr:
+        _addr[text] = STR_BASE + len(_blob)
+        _blob.extend(text.encode() + b"\0")
+    return _addr[text]
+
+
+_rows = [(_s(n), GREAT_POWER_STRINGS[gp], _s(lt)) for n, gp, lt in ALIAS_TABLE]
+while len(_blob) % 4:
+    _blob.append(0)
+TBL = STR_BASE + len(_blob)                     # 3 pointers per row, 0-row ends it
+_table = b"".join(_u32(*r) for r in _rows) + _u32(0, 0, 0)
+STR_AND_TABLE = bytes(_blob) + _table
+
+# --- same table without the Arab nations (for the unit icons) --------
+TBL2 = 0x881C70
+TABLE_NO_ARAB = b"".join(_u32(*r) for (n, _, _), r in zip(ALIAS_TABLE, _rows)
+                         if n not in ARAB_NATIONS) + _u32(0, 0, 0)
+
+# --- great power -> index of its button template (1 GB, 2 FR, 3 AT, 4 RU, 5 PR)
+GPTAB = 0x881B60
+GP_INDEX = _u32(GREAT_POWER_STRINGS["FRANCIA"], 2, GREAT_POWER_STRINGS["AUSTRIA"], 3,
+                GREAT_POWER_STRINGS["RUSIA"], 4, GREAT_POWER_STRINGS["PRUSIA"], 5, 0, 0)
+
+APATH = 0x881DA0
+ARAB_TGA = b"Game\\UI\\MainMenu\\Tropas\\Botones\\PlantillaArabes.tga\0"
+ARABTAB = 0x881DD4
+ARAB_LIST = _u32(*[_addr[n] for n in ARAB_NATIONS], 0)
+
+ALIAS, HSWAP, ALIAS2 = 0x881740, 0x8817B0, 0x881D40
+CORE, GIC, GID = 0x881E00, 0x881F10, 0x881F20
+
+# Lookup loop shared by ALIAS and ALIAS2: compare the string id in ebx
+# with every name in the table at esi; on a hit, replace ebx by the id
+# of the alias great power.
+_ALIAS_BODY = """
+            push ebx
+            push esi
+            push edi
+            mov eax, dword ptr [esp+0x10]   ; argument: nation name id
+            push eax
+            call 0x52fb10                   ; take a reference (as the original call did)
+            add esp, 4
+            mov ebx, eax
+            {reset}
+            mov esi, {table:#x}
+        next:
+            mov eax, dword ptr [esi]        ; row: name, alias, ltext
+            test eax, eax
+            je done
+            push eax
+            call 0x530800                   ; id of the row's name
+            add esp, 4
+            mov edi, eax
+            push eax
+            call 0x530890                   ; release it again
+            add esp, 4
+            cmp edi, ebx
+            je hit
+            add esi, 12
+            jmp next
+        hit:
+            {store}
+            push ebx
+            call 0x530890                   ; drop the minor nation's id
+            add esp, 4
+            push dword ptr [esi+4]
+            call 0x530800                   ; id of the alias great power
+            add esp, 4
+            mov ebx, eax
+        done:
+            mov eax, ebx                    ; return (referenced) id
+            pop edi
+            pop esi
+            pop ebx
+            ret
+"""
+
+PATCHES_V12 = [
+    # ------------------------------------------------------------------
+    # 9. Header text and screen layout of the custom battle screens.
+    # ------------------------------------------------------------------
+    dict(va=STR_BASE, orig=None, data=STR_AND_TABLE,
+         desc="Nation names, LTEXT keys and ALIAS_TABLE."),
+    dict(va=ALIAS, orig=None,
+         asm=_ALIAS_BODY.format(
+             table=TBL,
+             reset=f"mov dword ptr [{G_LTEXT:#x}], 0      ; assume great power",
+             store=f"mov eax, dword ptr [esi+8]\n"
+                   f"            mov dword ptr [{G_LTEXT:#x}], eax  ; remember header text"),
+         desc="ALIAS: minor nation -> alias great power, remembers its "
+              "header text in G_LTEXT (cave)."),
+    dict(va=HSWAP, orig=None,
+         asm=f"""
+            push eax
+            mov eax, dword ptr [{G_LTEXT:#x}]
+            test eax, eax
+            je keep                         ; great power: unchanged
+            mov dword ptr [esp+8], eax      ; minor: use LTEXT_PAIS_<nation>
+        keep:
+            pop eax
+            jmp 0x530800                    ; original call: intern(string)
+         """,
+         desc="HSWAP: swaps the header text key for minor nations (cave)."),
+] + [
+    dict(va=va, asm=f"call {ALIAS:#x}", call_from=0x52FB10,
+         desc="Custom battle screen: resolve the nation through ALIAS.")
+    for va in (0x7D064F, 0x7D13D6, 0x7D1FB4, 0x7D5924, 0x7D7844)
+] + [
+    dict(va=va, asm=f"call {HSWAP:#x}", call_from=0x530800,
+         desc="Custom battle header: text key through HSWAP.")
+    for va in (0x7D0687, 0x7D06F6, 0x7D0765, 0x7D07D4, 0x7D0843,
+               0x7D1FEC, 0x7D205B, 0x7D20CA, 0x7D2139, 0x7D21A8,
+               0x7D595F, 0x7D59D2, 0x7D5A45, 0x7D5AB8, 0x7D5B2B,
+               0x7D787F, 0x7D78F2, 0x7D7965, 0x7D79D8, 0x7D7A4B)
+] + [
+    # ------------------------------------------------------------------
+    # 10. Unit button template on the army screen. The template file is
+    #     picked from a table at [ebp+0x174 + 4*index], index =
+    #     [ebp+0x114] (1..5 = GB, FR, AT, RU, PR). CORE returns the index
+    #     to use: the alias great power's index for European minors, and
+    #     for Arab nations an index that points at G_ARABTGA (the id of
+    #     PlantillaArabes.tga), i.e. (G_ARABTGA - ebp - 0x174) / 4.
+    # ------------------------------------------------------------------
+    dict(va=GPTAB, orig=None, data=GP_INDEX,
+         desc="Great power -> template index table."),
+    dict(va=APATH, orig=None, data=ARAB_TGA,
+         desc="Path of the Arab button template (in ALLNATIONS.PAK)."),
+    dict(va=ARABTAB, orig=None, data=ARAB_LIST,
+         desc="List of the five Arab nations."),
+    dict(va=CORE, orig=None,
+         asm=f"""
+            pushfd
+            pushad
+            mov eax, dword ptr [ebp+0x114]  ; original index
+            mov dword ptr [esp+0x1c], eax   ; = return value (saved eax)
+            sub esp, 8                      ; [esp]=result node, [esp+4]=key
+            mov dword ptr [esp+4], eax
+            lea ecx, [esp+4]
+            push ecx                        ; &key
+            lea edx, [esp+4]
+            push edx                        ; &result
+            mov eax, dword ptr [ebp+0xd8]
+            mov ecx, dword ptr [eax+0x20]
+            mov ecx, dword ptr [ecx+0x18]
+            add ecx, 0x28                   ; map index -> nation
+            call 0x5c0410                   ; map.find(index)
+            mov eax, dword ptr [ebp+0xd8]
+            mov eax, dword ptr [eax+0x20]
+            mov eax, dword ptr [eax+0x18]
+            mov eax, dword ptr [eax+0x28+8] ; map.end()
+            mov ecx, dword ptr [esp]
+            cmp ecx, eax
+            je notfound
+            mov edx, dword ptr [ecx+0xc]    ; nation name id
+            mov esi, edx
+            mov edi, {ARABTAB:#x}
+        arabloop:                           ; is it one of the Arab nations?
+            mov eax, dword ptr [edi]
+            test eax, eax
+            je notarab
+            push eax
+            call 0x530800
+            add esp, 4
+            mov ebx, eax
+            push eax
+            call 0x530890
+            add esp, 4
+            cmp ebx, esi
+            je isarab
+            add edi, 4
+            jmp arabloop
+        isarab:
+            cmp dword ptr [{G_ARABTGA:#x}], 0
+            jne havetga
+            push {APATH:#x}
+            call 0x530800                   ; id of PlantillaArabes.tga (kept)
+            add esp, 4
+            mov dword ptr [{G_ARABTGA:#x}], eax
+        havetga:
+            mov eax, {G_ARABTGA:#x}
+            sub eax, ebp
+            sub eax, 0x174
+            sar eax, 2                      ; index that points at G_ARABTGA
+            mov dword ptr [esp+8+0x1c], eax
+            add esp, 8
+            popad
+            popfd
+            ret
+        notarab:
+            mov edx, esi
+            push edx
+            call {ALIAS:#x}                 ; alias great power (referenced id)
+            add esp, 4
+            mov esi, eax
+            cmp dword ptr [{G_LTEXT:#x}], 0
+            je release                      ; great power: keep index
+            mov edi, {GPTAB:#x}
+        gploop:
+            mov eax, dword ptr [edi]
+            test eax, eax
+            je release
+            push eax
+            call 0x530800
+            add esp, 4
+            mov ebx, eax
+            push eax
+            call 0x530890
+            add esp, 4
+            cmp ebx, esi
+            je found
+            add edi, 8
+            jmp gploop
+        found:
+            mov eax, dword ptr [edi+4]      ; template index of the alias
+            mov dword ptr [esp+8+0x1c], eax
+        release:
+            push esi
+            call 0x530890
+            add esp, 4
+            add esp, 8
+            popad
+            popfd
+            ret
+        notfound:
+            add esp, 8
+            popad
+            popfd
+            ret
+         """,
+         desc="CORE: template index for the nation (cave)."),
+    dict(va=GIC, orig=None,
+         asm=f"push eax\ncall {CORE:#x}\nmov ecx, eax\npop eax\nret",
+         desc="CORE wrapper returning in ecx."),
+    dict(va=GID, orig=None,
+         asm=f"push eax\ncall {CORE:#x}\nmov edx, eax\npop eax\nret",
+         desc="CORE wrapper returning in edx."),
+    dict(va=0x7D02B7, orig="8b8d14010000", asm=f"call {GIC:#x}", pad=1,
+         desc="Army screen: mov ecx,[ebp+0x114] -> call GIC."),
+    dict(va=0x7D02E3, orig="8b8514010000", asm=f"call {CORE:#x}", pad=1,
+         desc="Army screen: mov eax,[ebp+0x114] -> call CORE."),
+    dict(va=0x7D0320, orig="8b9514010000", asm=f"call {GID:#x}", pad=1,
+         desc="Army screen: mov edx,[ebp+0x114] -> call GID."),
+
+    # ------------------------------------------------------------------
+    # 11. Unit icons (key NATION_TYPE_BTN_*): European minors use the
+    #     icons of their alias great power, Arab nations keep their own
+    #     name and get their own icons from ALLNATIONS.PAK.
+    # ------------------------------------------------------------------
+    dict(va=TBL2, orig=None, data=TABLE_NO_ARAB,
+         desc="ALIAS_TABLE without the Arab nations."),
+    dict(va=ALIAS2, orig=None,
+         asm=_ALIAS_BODY.format(table=TBL2, reset="", store=""),
+         desc="ALIAS2: like ALIAS, without header text (cave)."),
+    dict(va=0x7CE675, asm=f"call {ALIAS2:#x}", call_from=0x52FB10,
+         desc="Unit icon key: resolve the nation through ALIAS2."),
+]
+
+PATCHES = PATCHES_V11 + PATCHES_V12
