@@ -1,5 +1,5 @@
 ﻿<#
-  Imperial Glory - All Nations Playable  v1.2
+  Imperial Glory - All Nations Playable  v1.3
   Patcher for the Steam version
 
   What this script does:
@@ -24,7 +24,7 @@ $LinkName  = 'Imperial Glory - All Nations.lnk'
 $CompatKey = 'HKCU:\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers'
 
 $OrigMD5 = 'd2c8a4580bbcfb34a37dae3214b198ea'   # ImperialGlory.exe, Steam version
-$ModMD5  = '2747a4b214e772c1184ba998c25b467e'   # expected result
+$ModMD5  = '9a1be8703f313bde158f3d6da34ab5bf'   # expected result
 
 $Patches = @(
     @(0x3ca03d, '7444', '9090'),  # VA 0x7ca03d
@@ -103,7 +103,9 @@ $Patches = @(
     @(0x3d0320, '8b9514010000', 'e8fb1b0b0090'),  # VA 0x7d0320
     @(0x481c70, 'cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc', '0018880088418c00081888001b18880088418c00241888003818880088418c00411888005618880088418c00411888006018880088418c006d1888008518880088418c008e188800a218880088418c00ac188800c118880088418c00cc188800e218880088418c00cc188800ee18880088418c00f61888000919880080418c00121988002619880080418c002e1988004119880080418c004b1988006019880080418c006719880079198800508c8b008119880094198800508c8b009d198800000000000000000000000000'),  # VA 0x881c70
     @(0x481d40, 'cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc', '5356578b44241050e8c3ddcaff83c40489c3be701c88008b0685c0743350e89deacaff83c40489c750e822ebcaff83c40439df740583c60cebdd53e810ebcaff83c404ff7604e875eacaff83c40489c389d85f5e5bc3'),  # VA 0x881d40
-    @(0x3ce675, 'e89614d6ff', 'e8c6360b00')  # VA 0x7ce675
+    @(0x3ce675, 'e89614d6ff', 'e8c6360b00'),  # VA 0x7ce675
+    @(0x4814c0, 'cccccccccccccccccccccccccccccccccccc', '85c00f84ef7af2ff6831454347e9d27af2ff'),  # VA 0x8814c0
+    @(0x3a8f9f, '6831454347', 'e91c850d00')  # VA 0x7a8f9f
 )
 
 function Info([string]$msg, [string]$color = 'Gray') { Write-Host $msg -ForegroundColor $color }
@@ -128,7 +130,7 @@ function DesktopLink {
 }
 
 Write-Host ''
-Info '=== Imperial Glory - All Nations Playable  v1.2 ===' 'Cyan'
+Info '=== Imperial Glory - All Nations Playable  v1.3 ===' 'Cyan'
 Write-Host ''
 
 if ($Action -eq 'uninstall') {
