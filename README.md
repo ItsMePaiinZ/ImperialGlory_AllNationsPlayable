@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://www.nexusmods.com/imperialglory/mods/4"><img alt="Download on Nexus Mods" src="https://img.shields.io/badge/Download-Nexus%20Mods-d98f40?style=for-the-badge"></a>
-  <img alt="Version 1.2" src="https://img.shields.io/badge/version-1.2-b8860b?style=for-the-badge">
+  <img alt="Version 1.3" src="https://img.shields.io/badge/version-1.3-b8860b?style=for-the-badge">
   <img alt="Steam version" src="https://img.shields.io/badge/game-Steam%20version-1b2838?style=for-the-badge">
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-555?style=for-the-badge"></a>
 </p>
@@ -77,12 +77,14 @@ python tools/build.py "C:\Program Files (x86)\Steam\steamapps\common\Imperial Gl
 The script writes everything to `out/` and compares it with the released files in `mod/`. Expected output:
 
 ```
-77 patches applied
-ImperialGlory_AllNations.exe  MD5 2747a4b214e772c1184ba998c25b467e
-patcher.ps1                   MD5 14a8955cb6792f3b9af9be25dd0aeff6  identical to release
+81 patches applied
+ImperialGlory_AllNations.exe  MD5 f09a4b7cf87cb492dc84fcdcde6e9aff
+patcher.ps1                   MD5 0d83ff883453038aa40d00296eea8775  identical to release
 ALLNATIONS.PAK                MD5 98b47aa950af162845e7cca6c03bcc64  identical to release
 exe MD5 matches the MD5 the release installer expects: True
 ```
+
+> Python 3.14 and newer on Windows compress with zlib-ng, so the rebuilt `ALLNATIONS.PAK` can show `DIFFERS from release` although every file inside is identical. Build with Python 3.13 or older to get the byte-identical archive.
 
 | Output | |
 |---|---|
@@ -95,7 +97,7 @@ exe MD5 matches the MD5 the release installer expects: True
 ### Repository layout
 
 ```
-src/patches.py              all 77 exe changes as commented x86 assembly
+src/patches.py              all 81 exe changes as commented x86 assembly
 tools/build.py              build + comparison with the release
 tools/patcher_template.ps1  the installer without the generated patch table
 pak/Game/...                the eleven files that go into ALLNATIONS.PAK
@@ -120,6 +122,7 @@ The Steam `ImperialGlory.exe` is a 32-bit program without ASLR, so all addresses
 | 9 | Custom battle screens *(v1.2)* | Each minor nation gets the screen layout of a related great power (`ALIAS_TABLE`), but the header keeps its real name (`LTEXT_PAIS_*`). |
 | 10 | Unit buttons *(v1.2)* | The army screen uses the button template of the related great power. Arab nations use their own template, `PlantillaArabes.tga`. |
 | 11 | Unit icons *(v1.2)* | European minors use the icons of their great power. Arab nations use their own icon entries from `ALLNATIONS.PAK`. |
+| 12 | Great-power panel *(v1.3)* | The panel refresh skips nations without a panel entry. Previously right-clicking another nation's territory crashed. |
 
 The full assembly with comments is in [`src/patches.py`](src/patches.py).
 
@@ -141,6 +144,7 @@ The full assembly with comments is in [`src/patches.py`](src/patches.py).
 
 | Version | Changes |
 |---|---|
+| **1.3** | Fixed a crash when right-clicking another nation's territory with a minor nation. |
 | **1.2** | Custom battles with all 24 nations (land and naval): real nation names, purchasable units, working Auto-Buy. Arab nations get Arab troops, including camel riders, and their own unit pictures. |
 | **1.1** | North African nations can be clicked on the map. The list on the right no longer covers the OK button. Minor nations show their own flag instead of the Austrian coat of arms. |
 | **1.0** | First release. |

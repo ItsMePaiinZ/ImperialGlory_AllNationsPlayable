@@ -1,5 +1,5 @@
 =====================================================================
-  Imperial Glory - All Nations Playable                      v1.2
+  Imperial Glory - All Nations Playable                      v1.3
 =====================================================================
 
 This mod lets you play any of the 24 nations, not just the five great
@@ -132,7 +132,7 @@ Game data (ALLNATIONS.PAK):
       custom battle: unit pictures of the Arab nations (made from the
       game's own Egyptian unit icons)
 
-Executable (ImperialGlory_AllNations.exe, 77 byte patches, all visible
+Executable (ImperialGlory_AllNations.exe, 81 byte patches, all visible
 in AllNations-Mod/patcher.ps1):
   - The hard-coded list of five selectable great powers applies to all
     nations in the selection menu. The list on the right keeps showing
@@ -143,6 +143,8 @@ in AllNations-Mod/patcher.ps1):
   - The human player is treated internally as a great power so that
     conquest, occupation and annexation through sympathy work.
   - Extra safety checks in the great-power progress panel.
+  - No crash when right-clicking another nation's territory with a
+    minor nation.
   - Custom battle screens: every nation gets the layout of a related
     great power but keeps its own name; Arab nations get their own
     unit button template and unit icons.
@@ -154,6 +156,8 @@ Source code and build instructions:
 
 VERSION HISTORY
 ---------------
+1.3  Fixed a crash when right-clicking another nation's territory
+     with a minor nation.
 1.2  Custom battles with all 24 nations (land and naval): real nation
      names, purchasable units, working Auto-Buy; Arab nations with Arab
      troops including camel riders and their own unit pictures.

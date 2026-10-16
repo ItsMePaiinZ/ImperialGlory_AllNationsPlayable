@@ -1,5 +1,5 @@
 """
-Imperial Glory - All Nations Playable v1.2
+Imperial Glory - All Nations Playable v1.3
 Source of every change made to ImperialGlory.exe (Steam version).
 
 Target: ImperialGlory.exe, Steam, MD5 d2c8a4580bbcfb34a37dae3214b198ea
@@ -712,4 +712,49 @@ PATCHES_V12 = [
          desc="Unit icon key: resolve the nation through ALIAS2."),
 ]
 
-PATCHES = PATCHES_V11 + PATCHES_V12
+# ======================================================================
+#  v1.3 - Crash fixes for minor nations in the campaign UI
+# ======================================================================
+#
+# The great-power panel maps an empire to a widget id with 0x7f02b0
+# (BTAU/BTPR/BTFR/BTRU/BTGB), which exists only for the five great powers
+# (same pattern as 0x7f0130 in section 6). For any other nation it returns
+# 0, the widget lookup 0x5584e0 returns NULL and the caller crashes. Since
+# patch 5 marks the human minor nation as a great power, it is part of the
+# empire list (0x65ce30) the panel walks through.
+
+PATCHES_V13 = [
+    # ------------------------------------------------------------------
+    # 12. Great-power panel refresh (0x7f14e0), e.g. after right-clicking
+    #     another nation's territory: both loops skip empires without a
+    #     panel entry instead of calling a method on NULL (issue #1).
+    # ------------------------------------------------------------------
+    dict(va=0x881480, orig=None,
+         asm="""
+            test eax, eax
+            jz 0x7f1539                     ; no entry -> next empire
+            push eax
+            mov ecx, esi
+            call 0x5584e0                   ; original lookup
+            jmp 0x7f1532
+         """,
+         desc="Panel refresh, loop 1: skip empires without an entry (cave)."),
+    dict(va=0x7F152A, orig="508bcee8ae6fd6ff",
+         asm="jmp 0x881480", pad=3,
+         desc="Panel refresh, loop 1: jump into the cave."),
+    dict(va=0x8814A0, orig=None,
+         asm="""
+            test eax, eax
+            jz 0x7f15a3                     ; no entry -> next empire
+            push eax
+            mov ecx, esi
+            call 0x5584e0
+            jmp 0x7f1577
+         """,
+         desc="Panel refresh, loop 2: skip empires without an entry (cave)."),
+    dict(va=0x7F156F, orig="508bcee8696fd6ff",
+         asm="jmp 0x8814a0", pad=3,
+         desc="Panel refresh, loop 2: jump into the cave."),
+]
+
+PATCHES = PATCHES_V11 + PATCHES_V12 + PATCHES_V13
