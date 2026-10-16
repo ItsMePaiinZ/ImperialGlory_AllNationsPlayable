@@ -1,5 +1,5 @@
 """
-Imperial Glory - All Nations Playable v1.2
+Imperial Glory - All Nations Playable v1.3
 Source of every change made to ImperialGlory.exe (Steam version).
 
 Target: ImperialGlory.exe, Steam, MD5 d2c8a4580bbcfb34a37dae3214b198ea
@@ -712,4 +712,32 @@ PATCHES_V12 = [
          desc="Unit icon key: resolve the nation through ALIAS2."),
 ]
 
-PATCHES = PATCHES_V11 + PATCHES_V12
+# ======================================================================
+#  v1.3 - Crash fixes for minor nations in the campaign UI
+# ======================================================================
+#
+# The global statistics screen maps an empire to a legend entry with
+# 0x7a85c0 (CBHU/CBPR/CBFR/CBRU/CBIN), which exists only for the five
+# great powers. For any other nation it returns 0, no entry is found and
+# the tab control 0x76e9d0 calls a method on NULL.
+
+PATCHES_V13 = [
+    # ------------------------------------------------------------------
+    # 13. Global statistics (News Bulletin > Economy): on opening, the
+    #     legend entry of the human player's nation is selected. A minor
+    #     nation has no entry, so nothing is selected (issue #2).
+    # ------------------------------------------------------------------
+    dict(va=0x8814C0, orig=None,
+         asm="""
+            test eax, eax
+            jz 0x7a8fb7                     ; no legend entry -> select none
+            push 0x47434531                 ; original: push 'GCE1'
+            jmp 0x7a8fa4
+         """,
+         desc="Global statistics: skip the selection without an entry (cave)."),
+    dict(va=0x7A8F9F, orig="6831454347",
+         asm="jmp 0x8814c0",
+         desc="Global statistics: jump into the cave."),
+]
+
+PATCHES = PATCHES_V11 + PATCHES_V12 + PATCHES_V13
