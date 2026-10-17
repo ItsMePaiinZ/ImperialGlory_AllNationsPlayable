@@ -1,5 +1,5 @@
 """
-Imperial Glory - All Nations Playable v1.2
+Imperial Glory - All Nations Playable v1.2.1
 Source of every change made to ImperialGlory.exe (Steam version).
 
 Target: ImperialGlory.exe, Steam, MD5 d2c8a4580bbcfb34a37dae3214b198ea
@@ -712,4 +712,45 @@ PATCHES_V12 = [
          desc="Unit icon key: resolve the nation through ALIAS2."),
 ]
 
-PATCHES = PATCHES_V11 + PATCHES_V12
+
+# ======================================================================
+#  v1.2.1 - fix: crash when right-clicking a nation as a minor nation
+# ======================================================================
+#
+# Right-clicking a nation on the campaign map opens its info panel. The
+# panel (function 0x7f14e0) gets the list of great powers - which now
+# includes the human minor nation - and looks up each one's entry in the
+# panel with 0x5584e0. The human minor nation has no entry, the lookup
+# returns NULL and the game called a method on it (crash at 0x7f158f /
+# 0x7f1532). Both loops now skip players without an entry, like the two
+# progress-panel checks in section 6.
+PANEL_A, PANEL_B = 0x881480, 0x8814A0
+
+PATCHES_V121 = [
+    dict(va=PANEL_A, orig=None,
+         asm="""
+            test eax, eax
+            jz 0x7f1539                     ; no entry -> next player
+            mov edx, dword ptr [eax]
+            mov ecx, eax
+            call dword ptr [edx+0x7c]       ; original: entry->Hide()
+            jmp 0x7f1539
+         """,
+         desc="Info panel NULL check #1 (cave)."),
+    dict(va=0x7F1532, orig="8b108bc8ff527c", asm=f"jmp {PANEL_A:#x}", pad=2,
+         desc="Info panel loop #1: jump into the cave."),
+    dict(va=PANEL_B, orig=None,
+         asm="""
+            mov ebp, eax                    ; original instructions
+            test eax, eax
+            jz 0x7f15a3                     ; no entry -> next player
+            mov eax, dword ptr [edi]
+            cmp eax, ebx
+            jmp 0x7f157d                    ; flags of cmp are used there
+         """,
+         desc="Info panel NULL check #2 (cave)."),
+    dict(va=0x7F1577, orig="8be88b073bc3", asm=f"jmp {PANEL_B:#x}", pad=1,
+         desc="Info panel loop #2: jump into the cave."),
+]
+
+PATCHES = PATCHES_V11 + PATCHES_V12 + PATCHES_V121
