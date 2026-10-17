@@ -140,6 +140,8 @@ The full assembly with comments is in [`src/patches.py`](src/patches.py).
 
 ## Version history
 
+The full changelog is in [`CHANGELOG.md`](CHANGELOG.md).
+
 | Version | Changes |
 |---|---|
 | **1.2.1** | Fixed a crash when right-clicking a nation on the campaign map while playing a minor nation. |
